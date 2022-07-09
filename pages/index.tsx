@@ -23,7 +23,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-3">
               <div className="course_bner">
                 <a>
-                  <img src="images/video2.png" width="100%" />
+                  <img alt="" src="images/video2.png" width="100%" />
                 </a>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                 <div className="slide_group slide_category_5 owl-carousel">
                   <div className="item">
                     <a href="course_details.html">
-                      <img src="images/t1.png" width="100%" />
+                      <img alt="" src="images/t1.png" width="100%" />
                     </a>
                     <div className="element-list">
                       <span className="icon_sale v2">HOT</span>
@@ -50,7 +50,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                       </h4>
                       <div className="author-info">
                         <a>
-                          <img src="images/2.png" />
+                          <img alt="" src="images/2.png" />
                           <span>Nguyễn Đức Chung</span>
                         </a>
                       </div>
@@ -98,7 +98,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                   </div>
                   <div className="item">
                     <a href="course_details.html">
-                      <img src="images/t2.jpg" width="100%" />
+                      <img alt="" src="images/t2.jpg" width="100%" />
                     </a>
                     <div className="element-list">
                       <span className="icon_sale v2">HOT</span>
@@ -109,7 +109,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                       </h4>
                       <div className="author-info">
                         <a>
-                          <img src="images/3.png" />
+                          <img alt="" src="images/3.png" />
                           <span>Nguyễn Đức Chung</span>
                         </a>
                       </div>
@@ -157,7 +157,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                   </div>
                   <div className="item">
                     <a href="course_details.html">
-                      <img src="images/t5.jpg" width="100%" />
+                      <img alt="" src="images/t5.jpg" width="100%" />
                     </a>
                     <div className="element-list">
                       <span className="icon_sale v2">HOT</span>
@@ -168,7 +168,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                       </h4>
                       <div className="author-info">
                         <a>
-                          <img src="images/4.png" />
+                          <img alt="" src="images/4.png" />
                           <span>Nguyễn Đức Chung</span>
                         </a>
                       </div>
@@ -216,7 +216,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                   </div>
                   <div className="item">
                     <a href="course_details.html">
-                      <img src="images/t3.jpg" width="100%" />
+                      <img alt="" src="images/t3.jpg" width="100%" />
                     </a>
                     <div className="element-list">
                       <span className="icon_sale v2">HOT</span>
@@ -227,7 +227,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                       </h4>
                       <div className="author-info">
                         <a>
-                          <img src="images/5.png" />
+                          <img alt="" src="images/5.png" />
                           <span>Nguyễn Đức Chung</span>
                         </a>
                       </div>
@@ -299,23 +299,23 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
-                    <img src="images/sony.jpg" />
+                    <img alt="" src="images/sony.jpg" />
                   </a>
                 </div>
                 <div className="imgs_bottom">
                   <div className="img_box">
                     <a>
-                      <img src="images/sony2.jpg" />
+                      <img alt="" src="images/sony2.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/sony3.jpg" />
+                      <img alt="" src="images/sony3.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/sony4.jpg" />
+                      <img alt="" src="images/sony4.jpg" />
                     </a>
                   </div>
                 </div>
@@ -329,23 +329,23 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
-                    <img src="images/samsung3.jpg" />
+                    <img alt="" src="images/samsung3.jpg" />
                   </a>
                 </div>
                 <div className="imgs_bottom">
                   <div className="img_box">
                     <a>
-                      <img src="images/samsungbox.jpg" />
+                      <img alt="" src="images/samsungbox.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/sound2.jpg" />
+                      <img alt="" src="images/sound2.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/sound.jpg" />
+                      <img alt="" src="images/sound.jpg" />
                     </a>
                   </div>
                 </div>
@@ -359,23 +359,23 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
-                    <img src="images/ubl.jpg" />
+                    <img alt="" src="images/ubl.jpg" />
                   </a>
                 </div>
                 <div className="imgs_bottom">
                   <div className="img_box">
                     <a>
-                      <img src="images/sound.jpg" />
+                      <img alt="" src="images/sound.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/pd2.jpg" />
+                      <img alt="" src="images/pd2.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/pd4.jpg" />
+                      <img alt="" src="images/pd4.jpg" />
                     </a>
                   </div>
                 </div>
@@ -389,23 +389,23 @@ const Home: NextPageWithLayout = (): JSX.Element => {
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
-                    <img src="images/macbook2.jpg" />
+                    <img alt="" src="images/macbook2.jpg" />
                   </a>
                 </div>
                 <div className="imgs_bottom">
                   <div className="img_box">
                     <a>
-                      <img src="images/smartwatch3.jpg" />
+                      <img alt="" src="images/smartwatch3.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/samsung3.jpg" />
+                      <img alt="" src="images/samsung3.jpg" />
                     </a>
                   </div>
                   <div className="img_box">
                     <a>
-                      <img src="images/samsungbox.jpg" />
+                      <img alt="" src="images/samsungbox.jpg" />
                     </a>
                   </div>
                 </div>
@@ -430,7 +430,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="flex_6">
                 <div className="content_6">
                   <a href="categories.html">
-                    <img src="images/blog1.jpg" width="100%" />
+                    <img alt="" src="images/blog1.jpg" width="100%" />
                   </a>
                 </div>
                 <div className="ct_right">
@@ -465,7 +465,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="flex_6">
                 <div className="content_6">
                   <a href="categories.html">
-                    <img src="images/blog2.jpg" width="100%" />
+                    <img alt="" src="images/blog2.jpg" width="100%" />
                   </a>
                 </div>
                 <div className="ct_right">
@@ -498,7 +498,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="flex_6">
                 <div className="content_6">
                   <a href="categories.html">
-                    <img src="images/blog3.jpg" width="100%" />
+                    <img alt="" src="images/blog3.jpg" width="100%" />
                   </a>
                 </div>
                 <div className="ct_right">
@@ -531,7 +531,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="flex_6">
                 <div className="content_6">
                   <a href="categories.html">
-                    <img src="images/dt.jpg" width="100%" />
+                    <img alt="" src="images/dt.jpg" width="100%" />
                   </a>
                 </div>
                 <div className="ct_right">
@@ -566,7 +566,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
       <div className="banner_content">
         <div className="container">
           <a>
-            <img src="images/banner.jpg" style={{ width: '100%' }} />
+            <img alt="" src="images/banner.jpg" style={{ width: '100%' }} />
           </a>
         </div>
       </div>
@@ -585,7 +585,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/samsungbox.jpg" />
+                  <img alt="" src="images/samsungbox.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -601,7 +601,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/headphone3.jpg" />
+                  <img alt="" src="images/headphone3.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -620,7 +620,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/smartwatch3.jpg" />
+                  <img alt="" src="images/smartwatch3.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -636,7 +636,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/sound.jpg" />
+                  <img alt="" src="images/sound.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -652,7 +652,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/usb.jpg" />
+                  <img alt="" src="images/usb.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -670,7 +670,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/pd3.jpg" />
+                  <img alt="" src="images/pd3.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -688,7 +688,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/flycam.jpg" />
+                  <img alt="" src="images/flycam.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -704,7 +704,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/ubl.jpg" />
+                  <img alt="" src="images/ubl.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -723,7 +723,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/ring.jpg" />
+                  <img alt="" src="images/ring.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -739,7 +739,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/samsung3.jpg" />
+                  <img alt="" src="images/samsung3.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -757,7 +757,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/sony2.jpg" />
+                  <img alt="" src="images/sony2.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -776,7 +776,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
               <div className="item_ex_pro">
                 <a className="hvr-grow">
-                  <img src="images/sound2.jpg" />
+                  <img alt="" src="images/sound2.jpg" />
                 </a>
                 <div className="flash_name">
                   <span>Computers &amp; Accessories</span>
@@ -806,7 +806,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="item">
               <div className="similar_product_img">
                 <a>
-                  <img src="images/i2.png" />
+                  <img alt="" src="images/i2.png" />
                 </a>
               </div>
               <div className="similar_product_price">
@@ -822,7 +822,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="item">
               <div className="similar_product_img">
                 <a>
-                  <img src="images/h1_s1.jpg" />
+                  <img alt="" src="images/h1_s1.jpg" />
                 </a>
               </div>
               <div className="similar_product_price">
@@ -838,7 +838,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="item">
               <div className="similar_product_img">
                 <a>
-                  <img src="images/h1_s2.jpg" />
+                  <img alt="" src="images/h1_s2.jpg" />
                 </a>
               </div>
               <div className="similar_product_price">
@@ -854,7 +854,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="item">
               <div className="similar_product_img">
                 <a>
-                  <img src="images/h1_s3.jpg" />
+                  <img alt="" src="images/h1_s3.jpg" />
                 </a>
               </div>
               <div className="similar_product_price">
@@ -870,7 +870,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             <div className="item">
               <div className="similar_product_img">
                 <a>
-                  <img src="images/i2.png" />
+                  <img alt="" src="images/i2.png" />
                 </a>
               </div>
               <div className="similar_product_price">
@@ -889,7 +889,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
       <div className="banner_content">
         <div className="container">
           <a>
-            <img src="images/banner.jpg" style={{ width: '100%' }} />
+            <img alt="" src="images/banner.jpg" style={{ width: '100%' }} />
           </a>
         </div>
       </div>
@@ -907,7 +907,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
           <div className="slide_flash owl-carousel">
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/pd3.jpg" />
+                <img alt="" src="images/pd3.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -921,7 +921,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             </div>
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/tv2.jpg" />
+                <img alt="" src="images/tv2.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -935,7 +935,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             </div>
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/macbook2.jpg" />
+                <img alt="" src="images/macbook2.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -949,7 +949,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             </div>
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/sound2.jpg" />
+                <img alt="" src="images/sound2.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -963,7 +963,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             </div>
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/pd4.jpg" />
+                <img alt="" src="images/pd4.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -977,7 +977,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
             </div>
             <div className="item_flash">
               <a href="product_detail.html">
-                <img src="images/samsungbox.jpg" />
+                <img alt="" src="images/samsungbox.jpg" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -999,7 +999,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1011,7 +1011,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1023,7 +1023,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1035,7 +1035,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1047,7 +1047,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1059,7 +1059,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1071,7 +1071,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1083,7 +1083,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1095,7 +1095,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1107,7 +1107,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1119,7 +1119,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
@@ -1131,7 +1131,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
               <div className="link_btn_box">
                 <div className="icons">
                   <a>
-                    <img src="images/price.svg" />
+                    <img alt="" src="images/price.svg" />
                   </a>
                 </div>
                 <div className="title">
