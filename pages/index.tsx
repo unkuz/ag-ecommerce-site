@@ -1,21 +1,13 @@
-import { AGPoints } from "@@/components/Layouts/Header/AGPoints";
-import { BannerContent } from "@@/layouts/BannerContent";
-import { BannerTop } from "@@/components/Layouts/Header/BannerTop";
-import { BannerTopSlide } from "@@/layouts/BannerTopSlide";
-import { ExclusiveProducts } from "@@/layouts/ExclusiveProducts";
-import { FlashSale } from "@@/layouts/FlashSale";
-import { Footer } from "@@/layouts/Footer";
-import { FtEnd } from "@@/layouts/FtEnd";
-import { MenuHeader } from "@@/components/Layouts/Header/MenuHeader";
-import { ScrollTop } from "@@/layouts/ScrollTop";
-import { Slide2 } from "@@/layouts/Slide2";
-import { TopBarCategories } from "@@/components/Layouts/Header/TopBarCategories";
-import { TopBarV2 } from "@@/components/Layouts/Header/TopBarV2";
-import { NextPage } from "next";
-import Script from "next/script";
-import { MainLayout } from "@@/layouts/MainLayout";
-import React, { ReactElement, useEffect } from "react";
-import { NextPageWithLayout } from "./_app";
+import { BannerContent } from '@@/layouts/BannerContent'
+import { BannerTopSlide } from '@@/layouts/BannerTopSlide'
+import { ExclusiveProducts } from '@@/layouts/ExclusiveProducts'
+import { FlashSale } from '@@/layouts/FlashSale'
+import { Footer } from '@@/layouts/Footer'
+import { FtEnd } from '@@/layouts/FtEnd'
+import { MainLayout } from '@@/layouts/MainLayout'
+import { Slide2 } from '@@/layouts/Slide2'
+import { ReactElement } from 'react'
+import { NextPageWithLayout } from './_app'
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -56,9 +48,7 @@ const Home: NextPageWithLayout = () => {
                     <div className="element-list">
                       <span className="icon_sale v2">HOT</span>
                       <h4>
-                        <a href="course_details.html">
-                          Nền tảng tiếng Anh cho người mới bắt đầu
-                        </a>
+                        <a href="course_details.html">Nền tảng tiếng Anh cho người mới bắt đầu</a>
                       </h4>
                       <div className="author-info">
                         <a>
@@ -307,9 +297,7 @@ const Home: NextPageWithLayout = () => {
               <div className="search_trends_box">
                 <div className="title_nums">
                   <h4>
-                    <a>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                    </a>
+                    <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit</a>
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
@@ -339,9 +327,7 @@ const Home: NextPageWithLayout = () => {
               <div className="search_trends_box">
                 <div className="title_nums">
                   <h4>
-                    <a>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                    </a>
+                    <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit</a>
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
@@ -371,9 +357,7 @@ const Home: NextPageWithLayout = () => {
               <div className="search_trends_box">
                 <div className="title_nums">
                   <h4>
-                    <a>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                    </a>
+                    <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit</a>
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
@@ -403,9 +387,7 @@ const Home: NextPageWithLayout = () => {
               <div className="search_trends_box">
                 <div className="title_nums">
                   <h4>
-                    <a>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                    </a>
+                    <a>Lorem ipsum dolor sit, amet consectetur adipisicing elit</a>
                     <span>+999 sản phẩm</span>
                   </h4>
                   <a>
@@ -457,19 +439,16 @@ const Home: NextPageWithLayout = () => {
                   <div className="news_post">
                     <h4>
                       <a href="categories.html">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Iure accusamus illum alias eveniet, beatae
-                        cupiditate voluptates facere labore quasi totam hic
-                        enim, repellendus deleniti qui vel quod minus.
-                        Quibusdam, ad!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus
+                        illum alias eveniet, beatae cupiditate voluptates facere labore quasi totam
+                        hic enim, repellendus deleniti qui vel quod minus. Quibusdam, ad!
                       </a>
                     </h4>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iure accusamus illum alias eveniet, beatae cupiditate
-                    voluptates facere labore quasi totam hic enim, repellendus
-                    deleniti qui vel quod minus. Quibusdam, ad!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                    alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic enim,
+                    repellendus deleniti qui vel quod minus. Quibusdam, ad!
                   </p>
                   <div className="bottom_news">
                     <time>
@@ -494,17 +473,15 @@ const Home: NextPageWithLayout = () => {
                 <div className="ct_right">
                   <h4>
                     <a href="categories.html">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Iure accusamus illum alias eveniet, beatae cupiditate
-                      voluptates facere labore quasi totam hic enim, repellendus
-                      deleniti qui vel quod minus. Quibusdam, ad!
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                      alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic
+                      enim, repellendus deleniti qui vel quod minus. Quibusdam, ad!
                     </a>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iure accusamus illum alias eveniet, beatae cupiditate
-                    voluptates facere labore quasi totam hic enim, repellendus
-                    deleniti qui vel quod minus. Quibusdam, ad!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                    alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic enim,
+                    repellendus deleniti qui vel quod minus. Quibusdam, ad!
                   </p>
                   <div className="bottom_news">
                     <time>
@@ -529,17 +506,15 @@ const Home: NextPageWithLayout = () => {
                 <div className="ct_right">
                   <h4>
                     <a href="categories.html">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Iure accusamus illum alias eveniet, beatae cupiditate
-                      voluptates facere labore quasi totam hic enim, repellendus
-                      deleniti qui vel quod minus. Quibusdam, ad!
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                      alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic
+                      enim, repellendus deleniti qui vel quod minus. Quibusdam, ad!
                     </a>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iure accusamus illum alias eveniet, beatae cupiditate
-                    voluptates facere labore quasi totam hic enim, repellendus
-                    deleniti qui vel quod minus. Quibusdam, ad!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                    alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic enim,
+                    repellendus deleniti qui vel quod minus. Quibusdam, ad!
                   </p>
                   <div className="bottom_news">
                     <time>
@@ -564,17 +539,15 @@ const Home: NextPageWithLayout = () => {
                 <div className="ct_right">
                   <h4>
                     <a href="categories.html">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Iure accusamus illum alias eveniet, beatae cupiditate
-                      voluptates facere labore quasi totam hic enim, repellendus
-                      deleniti qui vel quod minus. Quibusdam, ad!
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                      alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic
+                      enim, repellendus deleniti qui vel quod minus. Quibusdam, ad!
                     </a>
                   </h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iure accusamus illum alias eveniet, beatae cupiditate
-                    voluptates facere labore quasi totam hic enim, repellendus
-                    deleniti qui vel quod minus. Quibusdam, ad!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure accusamus illum
+                    alias eveniet, beatae cupiditate voluptates facere labore quasi totam hic enim,
+                    repellendus deleniti qui vel quod minus. Quibusdam, ad!
                   </p>
                   <div className="bottom_news">
                     <time>
@@ -595,7 +568,7 @@ const Home: NextPageWithLayout = () => {
       <div className="banner_content">
         <div className="container">
           <a>
-            <img src="images/banner.jpg" style={{ width: "100%" }} />
+            <img src="images/banner.jpg" style={{ width: '100%' }} />
           </a>
         </div>
       </div>
@@ -918,7 +891,7 @@ const Home: NextPageWithLayout = () => {
       <div className="banner_content">
         <div className="container">
           <a>
-            <img src="images/banner.jpg" style={{ width: "100%" }} />
+            <img src="images/banner.jpg" style={{ width: '100%' }} />
           </a>
         </div>
       </div>
@@ -1188,14 +1161,11 @@ const Home: NextPageWithLayout = () => {
       </div>
       <Footer />
       <FtEnd />
-
-      {/* <Script src={require("../assets/js/jquery")}></Script> */}
-      {/* <Script src={require("../assets/js/owl.carousel.min.js")}></Script> */}
     </div>
-  );
-};
+  )
+}
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <MainLayout>{page}</MainLayout>;
-};
-export default Home;
+  return <MainLayout>{page}</MainLayout>
+}
+export default Home

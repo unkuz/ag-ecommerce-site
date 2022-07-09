@@ -1,6 +1,55 @@
-import React from "react";
+import React, { useCallback, useState } from 'react'
+import { clearScreenDown } from 'readline'
+import cls from 'classnames'
+
+enum TABS {
+  TAB1 = 'TAB1',
+  TAB2 = 'TAB2',
+}
+
+const tabs = [
+  {
+    id: 1,
+    name: 'Thị trường của tôi',
+    else: TABS.TAB1,
+    content: [
+      { name: 'Trang phục', icon: 'icofont-jacket' },
+      { name: 'Chăm sóc cá nhân &amp; Làm đẹp', icon: 'icofont-ui-touch-phone' },
+      { name: 'Hàng điện tử tiêu dùng', icon: 'icofont-ui-touch-phone' },
+      { name: 'Đồng hồ, trang sức, kính', icon: 'icofont-ui-touch-phone' },
+      { name: 'Nhà và Vườn', icon: 'icofont-cement-mix' },
+      { name: 'Bao bì &amp; In ấn', icon: 'icofont-cube' },
+      { name: 'Thể thao &amp; giải trí', icon: 'icofont-muscle-weight' },
+      { name: 'Hành lý, túi và cặp', icon: 'icofont-bag-alt' },
+      { name: 'Quà tặng và hàng thủ công', icon: 'icofont-gift' },
+      { name: 'Sức khỏe và y tế', icon: 'icofont-first-aid' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Danh mục hot tháng 9',
+    else: TABS.TAB2,
+    content: [
+      { name: 'Trang phục', icon: 'icofont-jacket' },
+      { name: 'Chăm sóc cá nhân &amp; Làm đẹp', icon: 'icofont-ui-touch-phone' },
+      { name: 'Hàng điện tử tiêu dùng', icon: 'icofont-ui-touch-phone' },
+      { name: 'Đồng hồ, trang sức, kính', icon: 'icofont-ui-touch-phone' },
+      { name: 'Nhà và Vườn', icon: 'icofont-cement-mix' },
+      { name: 'Bao bì &amp; In ấn', icon: 'icofont-cube' },
+      { name: 'Thể thao &amp; giải trí', icon: 'icofont-muscle-weight' },
+      { name: 'Hành lý, túi và cặp', icon: 'icofont-bag-alt' },
+      { name: 'Quà tặng và hàng thủ công', icon: 'icofont-gift' },
+      { name: 'Sức khỏe và y tế', icon: 'icofont-first-aid' },
+    ],
+  },
+]
 
 export const BannerTopSlide = () => {
+  const [currentTab, setCurrentTab] = useState(TABS.TAB1)
+
+  const onChangeCurrentTab = useCallback((tab: TABS) => {
+    setCurrentTab(tab)
+  }, [])
   return (
     <div className="banner_topSlide">
       <div className="container">
@@ -11,146 +60,39 @@ export const BannerTopSlide = () => {
                 <div className="tabs_box">
                   <div id="tabs-container">
                     <ul className="tabs-menu">
-                      <li>
-                        <a href="#tab-1">Thị trường của tôi</a>
-                      </li>
-                      <li className="current">
-                        <a href="#tab-2">Danh mục hot tháng 9</a>
-                      </li>
+                      {tabs.map((i) => (
+                        <li
+                          onClick={() => {
+                            onChangeCurrentTab(i.else)
+                          }}
+                          key={i.id}
+                          className={cls({ current: i.else === currentTab })}
+                        >
+                          <a>{i.name}</a>
+                        </li>
+                      ))}
                     </ul>
                     <div className="tab">
-                      <div id="tab-1" className="tab-content">
-                        <div className="categories_box">
-                          <ul>
-                            <li>
-                              <a>
-                                <i className="icofont-jacket" />
-                                <span>Trang phục</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-ui-touch-phone" />
-                                <span>Chăm sóc cá nhân &amp; Làm đẹp</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-ui-touch-phone" />
-                                <span>Hàng điện tử tiêu dùng</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-ui-touch-phone" />
-                                <span>Đồng hồ, trang sức, kính</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-cement-mix" />
-                                <span>Nhà và Vườn</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-cube" />
-                                <span>Bao bì &amp; In ấn</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-muscle-weight" />
-                                <span>Thể thao &amp; giải trí</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-bag-alt" />
-                                <span>Hành lý, túi và cặp</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-gift" />
-                                <span>Quà tặng và hàng thủ công</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-first-aid" />
-                                <span>Sức khỏe và y tế</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div id="tab-2" className="tab-content">
-                        <div className="categories_box">
-                          <ul>
-                            <li>
-                              <a>
-                                <i className="icofont-jacket" />
-                                <span>Trang phục</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-love" />
-                                <span>Chăm sóc cá nhân &amp; Làm đẹp</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-usb-drive" />
-                                <span>Hàng điện tử tiêu dùng</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-diamond" />
-                                Đồng hồ, trang sức, kính
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-cement-mix" />
-                                <span>Nhà và Vườn</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-cube" />
-                                <span>Bao bì &amp; In ấn</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-muscle-weight" />
-                                <span>Thể thao &amp; giải trí</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-bag-alt" />
-                                <span>Hành lý, túi và cặp</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-gift" />
-                                <span>Quà tặng và hàng thủ công</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a>
-                                <i className="icofont-first-aid" />
-                                <span>Sức khỏe và y tế</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                      {tabs.map((i) => (
+                        <>
+                          {currentTab === i.else && (
+                            <div>
+                              <div className="categories_box">
+                                <ul>
+                                  {i.content.map((_i, idx) => (
+                                    <li key={idx}>
+                                      <a>
+                                        <i className={_i.icon} />
+                                        <span>{_i.name}</span>
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -198,5 +140,5 @@ export const BannerTopSlide = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

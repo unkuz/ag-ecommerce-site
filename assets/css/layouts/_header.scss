@@ -40,12 +40,7 @@
     display: block;
     button {
       color: #fff;
-      background-image: linear-gradient(
-        to right,
-        #fed700 0%,
-        #fd8d01 51%,
-        #fed700 100%
-      );
+      background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
       background-size: 200% auto;
       transition: all 1.5s;
       padding: 5px;
@@ -111,12 +106,7 @@
 header {
   .topbar_1 {
     padding: 15px;
-    background-image: linear-gradient(
-      to right,
-      #fed700 0%,
-      #fd8d01 51%,
-      #fed700 100%
-    );
+    background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
     background-size: 200% auto;
     transition: all 1.5s;
     margin-bottom: 15px;
@@ -173,12 +163,7 @@ header {
         }
         a {
           margin: 0 15px;
-          background-image: linear-gradient(
-            to right,
-            #fed700 0%,
-            #fd8d01 51%,
-            #fed700 100%
-          );
+          background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
           background-size: 200% auto;
           transition: all 1.5s;
           @media (max-width: 1199px) {
@@ -335,7 +320,7 @@ header {
         margin-bottom: 5px;
         display: flex;
         align-items: center;
-        input[type="text"] {
+        input[type='text'] {
           width: 90%;
           height: 100%;
           border: none;
@@ -351,12 +336,7 @@ header {
         button {
           width: 50px;
           height: 40px;
-          background-image: linear-gradient(
-            to right,
-            #fed700 0%,
-            #fd8d01 51%,
-            #fed700 100%
-          );
+          background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
           background-size: 200% auto;
           transition: all 1.5s;
           &:hover {
@@ -392,12 +372,7 @@ header {
   }
   .menu_header {
     margin-bottom: 15px;
-    background-image: linear-gradient(
-      to right,
-      #fed700 0%,
-      #fd8d01 51%,
-      #fed700 100%
-    );
+    background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
     background-size: 200% auto;
     transition: all 1s;
     &:hover {
@@ -445,12 +420,7 @@ header {
         }
       }
       .menu_right {
-        background-image: linear-gradient(
-          to right,
-          #fed700 0%,
-          #fd8d01 51%,
-          #fed700 100%
-        );
+        background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
         background-size: 200% auto;
         // transition: all 1.5s;
         // &:hover {
@@ -460,7 +430,7 @@ header {
         ul {
           position: relative;
           &:before {
-            content: "";
+            content: '';
             border-width: 0 0 55px 45px;
             border-color: #fed700 #fed700 #fed700 transparent;
             border-style: solid;
@@ -494,7 +464,7 @@ header {
             padding: 1px 10px;
             border-radius: 5px;
             &:before {
-              content: " ";
+              content: ' ';
               transform: rotate(225deg);
               position: absolute;
               width: 0;
@@ -821,12 +791,7 @@ header {
 }
 
 .topBar_categories {
-  background-image: linear-gradient(
-    to right,
-    #fed700 0%,
-    #fd8d01 51%,
-    #fed700 100%
-  );
+  background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
   background-size: 200% auto;
   transition: all 1.5s;
   padding: 5px 15px;
@@ -1029,6 +994,7 @@ header {
     // visibility: hidden;
     // opacity: 0;
     display: none;
+    overflow-y: scroll;
     top: 42px;
     @media (max-width: 1199px) {
       left: -80px;
@@ -1070,12 +1036,7 @@ header {
         // background: #eee;
       }
       &::-webkit-scrollbar-thumb {
-        background-image: linear-gradient(
-          to right,
-          #fed700 0%,
-          #fd8d01 51%,
-          #fed700 100%
-        );
+        background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
         visibility: hidden;
         opacity: 0;
       }
@@ -1108,12 +1069,7 @@ header {
           border-image-slice: 1;
         }
         &.b2_checkout {
-          background-image: linear-gradient(
-            to right,
-            #fd8d01 0%,
-            #fd8d01 51%,
-            #fed700 100%
-          );
+          background-image: linear-gradient(to right, #fd8d01 0%, #fd8d01 51%, #fed700 100%);
           background-size: 200% auto;
           transition: all 1.5s;
           color: #fff;
@@ -1203,12 +1159,7 @@ header {
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      background-image: linear-gradient(
-        to right,
-        #fed700 0%,
-        #fd8d01 51%,
-        #fed700 100%
-      );
+      background-image: linear-gradient(to right, #fed700 0%, #fd8d01 51%, #fed700 100%);
       background-size: 200% auto;
     }
     .links {

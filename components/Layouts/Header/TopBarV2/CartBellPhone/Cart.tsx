@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useMemo } from 'react'
 
 const cart = [
   {
-    name: " Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức",
-    image: "images/samsung3.jpg",
+    name: ' Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức',
+    image: 'images/samsung3.jpg',
     quantity: 9999,
-    price: "0đ",
+    price: '0đ',
   },
   {
-    name: " Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức",
-    image: "images/pd2.jpg",
+    name: ' Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức',
+    image: 'images/pd2.jpg',
     quantity: 5,
-    price: "0đ",
+    price: '0đ',
   },
   {
-    name: " Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức",
-    image: "images/pd3.jpg",
+    name: ' Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức',
+    image: 'images/pd3.jpg',
     quantity: 1,
-    price: "10đ",
+    price: '10đ',
   },
-];
+  {
+    name: ' IPhone 100XSMax',
+    image: 'images/pd3.jpg',
+    quantity: 1,
+    price: '10đ',
+  },
+]
 
 export const Cart = (): JSX.Element => {
+  const totalItemInCart = useMemo(() => cart.length, [])
   return (
     <li className="hide_cart">
       <a href="#">
         <i className="icofont-shopping-cart" />
-        <span>3</span>
+        <span>{totalItemInCart}</span>
       </a>
       <div className="cart_view">
         <h1>Sản phẩm vừa thêm</h1>
@@ -64,5 +71,5 @@ export const Cart = (): JSX.Element => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}

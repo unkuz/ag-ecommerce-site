@@ -1,17 +1,25 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useRef, useState } from 'react'
 
-const agPoints = "198.560.000";
+const agPoints = '198.560.000'
 
 export const AGPoints = (): JSX.Element => {
-  const [isShowShare, setIsShowShare] = useState(false);
+  const [isShowShare, setIsShowShare] = useState(false)
+  const [isCoppiedShareLink, setIsCoppiedShareLink] = useState(false)
+
+  const linkShareRef = useRef(null)
 
   const onShowShare = useCallback(() => {
-    setIsShowShare(true);
-  }, []);
+    setIsShowShare(true)
+  }, [])
 
   const onCloseShare = useCallback(() => {
-    setIsShowShare(false);
-  }, []);
+    setIsShowShare(false)
+  }, [])
+
+  const onCopyShareLink = useCallback(() => {
+    navigator.clipboard.writeText((linkShareRef.current as unknown as HTMLInputElement).innerText)
+    setIsCoppiedShareLink(true)
+  }, [])
 
   return (
     <div className="ag_points">
@@ -24,12 +32,16 @@ export const AGPoints = (): JSX.Element => {
             </span>
             <div className="linkBox">
               <div className="link_url">
-                <span>https://http://ag.ds.net.vn/?ref=123456</span>
+                <span ref={linkShareRef}>https://http://ag.ds.net.vn/?ref=123456</span>
               </div>
               <button>
                 <i className="icofont-memory-card icons" />
-                <span className="copy_btn" style={{ display: "inline-block" }}>
-                  Sao chép
+                <span
+                  className="copy_btn"
+                  style={{ display: 'inline-block' }}
+                  onClick={onCopyShareLink}
+                >
+                  {isCoppiedShareLink ? 'Đã sao chép' : 'Sao chép'}
                 </span>
               </button>
             </div>
@@ -45,10 +57,7 @@ export const AGPoints = (): JSX.Element => {
                   <p>AGpoint:</p>
                   <p>
                     <span>{agPoints}</span>
-                    <i
-                      className="icofont-life-buoy icons"
-                      style={{ fontSize: 17 }}
-                    />
+                    <i className="icofont-life-buoy icons" style={{ fontSize: 17 }} />
                   </p>
                 </div>
               </li>
@@ -114,5 +123,5 @@ export const AGPoints = (): JSX.Element => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}

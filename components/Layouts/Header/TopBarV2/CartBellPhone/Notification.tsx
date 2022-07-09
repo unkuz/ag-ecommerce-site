@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useMemo } from 'react'
 
 const notification = [
   {
-    name: "Bó hoa ăn được mùa Valentine từ 55K",
-    time: "10:22 11/02/2020",
-    image: "images/vlt.png",
+    name: 'Bó hoa ăn được mùa Valentine từ 55K',
+    time: '10:22 11/02/2020',
+    image: 'images/vlt.png',
   },
   {
-    name: "Gấu siêu to khổng lồ | Đồng giá 99K",
-    time: "10:22 11/02/2020",
-    image: "images/vlt2.png",
+    name: 'Gấu siêu to khổng lồ | Đồng giá 99K',
+    time: '10:22 11/02/2020',
+    image: 'images/vlt2.png',
   },
   {
-    name: "Mừng thành viên mới, Voucher tới",
-    time: "10:22 11/02/2020",
-    image: "images/km.png",
+    name: 'Mừng thành viên mới, Voucher tới',
+    time: '10:22 11/02/2020',
+    image: 'images/km.png',
   },
-];
+]
 export const Notification = (): JSX.Element => {
+  const totalNotifications = useMemo(() => notification.length, [])
   return (
     <li className="hide_notification">
       <a href="#">
         <i className="icofont-bell-alt" />
-        <span>3</span>
+        <span>{totalNotifications}</span>
       </a>
       <div className="notification_view">
         <h1>Thông báo của bạn</h1>
@@ -40,9 +41,7 @@ export const Notification = (): JSX.Element => {
                     <a>{i.name}</a>
                   </h4>
                   <div className="t_pri">
-                    <time style={{ color: "#999", fontSize: 13 }}>
-                      {i.time}
-                    </time>
+                    <time style={{ color: '#999', fontSize: 13 }}>{i.time}</time>
                     <button>
                       <span>Xóa</span>
                     </button>
@@ -59,5 +58,5 @@ export const Notification = (): JSX.Element => {
         </div>
       </div>
     </li>
-  );
-};
+  )
+}
