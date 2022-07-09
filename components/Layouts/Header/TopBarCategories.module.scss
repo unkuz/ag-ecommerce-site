@@ -1,0 +1,36 @@
+.topBar_categories {
+  height: 46px;
+  .container {
+    padding: 0 15px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .topbar_slide {
+      height: 100%;
+      display: inline-flex;
+      .item {
+        margin-right: 10px;
+        min-width: 187px;
+        max-width: 208px;
+        @media (max-width: 767px) {
+          height: 280px;
+        }
+      }
+    }
+  }
+}
+.slide-next {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 25px;
+  color: #fd8d01;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

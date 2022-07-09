@@ -1188,6 +1188,9 @@ const Home: NextPageWithLayout = () => {
       </div>
       <Footer />
       <FtEnd />
+
+      {/* <Script src={require("../assets/js/jquery")}></Script> */}
+      {/* <Script src={require("../assets/js/owl.carousel.min.js")}></Script> */}
     </div>
   );
 };

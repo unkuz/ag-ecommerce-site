@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
-export const AGPoints = () => {
+const agPoints = "198.560.000";
+
+export const AGPoints = (): JSX.Element => {
+  const [isShowShare, setIsShowShare] = useState(false);
+
+  const onShowShare = useCallback(() => {
+    setIsShowShare(true);
+  }, []);
+
+  const onCloseShare = useCallback(() => {
+    setIsShowShare(false);
+  }, []);
+
   return (
     <div className="ag_points">
       <div className="container">
@@ -21,7 +33,7 @@ export const AGPoints = () => {
                 </span>
               </button>
             </div>
-            <a href="#" className="btn_showSharebox">
+            <a href="#" className="btn_showSharebox" onClick={onShowShare}>
               <i className="fa fa-share-square-o icons" aria-hidden="true" />
               Chia sẻ
             </a>
@@ -32,7 +44,7 @@ export const AGPoints = () => {
                 <div className="point_num">
                   <p>AGpoint:</p>
                   <p>
-                    <span>198.560.000</span>
+                    <span>{agPoints}</span>
                     <i
                       className="icofont-life-buoy icons"
                       style={{ fontSize: 17 }}
@@ -59,42 +71,47 @@ export const AGPoints = () => {
             </ul>
           </div>
         </div>
-        <div className="share_box" style={{ display: "none" }}>
-          <div className="notifine_box">
-            <span className="icofont-close-line closedBtn_2" title="Đóng" />
-            <h4>Chia sẻ link giới thiệu</h4>
-            <div className="s_fb s_apps">
-              <a>
-                <img src="images/fb.png" /> Facebook
-              </a>
-            </div>
-            <div className="s_mess s_apps">
-              <a>
-                <img src="images/mes.png" />
-                messenger
-              </a>
-            </div>
-            <div className="s_tw s_apps">
-              <a>
-                <img src="images/tw.png" />
-                twitter
-              </a>
-            </div>
-            <div className="s_zl s_apps">
-              <a>
-                <img src="images/zl.png" />
-                zalo
-              </a>
-            </div>
-            <div className="s_em s_apps">
-              <a>
-                {" "}
-                <img src="images/em.png" />
-                email
-              </a>
+        {isShowShare && (
+          <div className="share_box">
+            <div className="notifine_box">
+              <span
+                className="icofont-close-line closedBtn_2"
+                title="Đóng"
+                onClick={onCloseShare}
+              />
+              <h4>Chia sẻ link giới thiệu</h4>
+              <div className="s_fb s_apps">
+                <a>
+                  <img src="images/fb.png" alt="Facebook" /> Facebook
+                </a>
+              </div>
+              <div className="s_mess s_apps">
+                <a>
+                  <img src="images/mes.png" alt="messenger" />
+                  messenger
+                </a>
+              </div>
+              <div className="s_tw s_apps">
+                <a>
+                  <img src="images/tw.png" alt="twitter" />
+                  twitter
+                </a>
+              </div>
+              <div className="s_zl s_apps">
+                <a>
+                  <img src="images/zl.png" alt="zalo" />
+                  zalo
+                </a>
+              </div>
+              <div className="s_em s_apps">
+                <a>
+                  <img src="images/em.png" alt="email" />
+                  email
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ import "@@/assets/fonts/WebFont/style.css";
 import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import Script from "next/script";
 import { ReactElement, ReactNode } from "react";
 
 export type NextPageWithLayout = NextPage & {
@@ -30,6 +31,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <title>AG-Ecome | Thế giới mua sắm trực tuyến</title>
         <link rel="icon" href="favicon.ico" type="images/png" />
       </Head>
+      {/* <Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></Script> */}
 
       <Component {...pageProps} />
     </>

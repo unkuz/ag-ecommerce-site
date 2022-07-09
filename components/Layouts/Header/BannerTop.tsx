@@ -1,6 +1,6 @@
 import React from "react";
 
-export const BannerTop = () => {
+export const BannerTop = (): JSX.Element => {
   return (
     <div className="banner_top_1">
       <a>
