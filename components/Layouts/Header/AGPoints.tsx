@@ -45,7 +45,7 @@ export const AGPoints = (): JSX.Element => {
                 </span>
               </button>
             </div>
-            <a href="#" className="btn_showSharebox" onClick={onShowShare}>
+            <a className="btn_showSharebox" onClick={onShowShare}>
               <i className="fa fa-share-square-o icons" aria-hidden="true" />
               Chia sẻ
             </a>

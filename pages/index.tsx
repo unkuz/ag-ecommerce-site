@@ -2,8 +2,6 @@ import { BannerContent } from '@@/layouts/BannerContent'
 import { BannerTopSlide } from '@@/layouts/BannerTopSlide'
 import { ExclusiveProducts } from '@@/layouts/ExclusiveProducts'
 import { FlashSale } from '@@/layouts/FlashSale'
-import { Footer } from '@@/layouts/Footer'
-import { FtEnd } from '@@/layouts/FtEnd'
 import { MainLayout } from '@@/layouts/MainLayout'
 import { Slide2 } from '@@/layouts/Slide2'
 import { ReactElement } from 'react'
@@ -1159,8 +1157,6 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
       </div>
-      <Footer />
-      <FtEnd />
     </div>
   )
 }
