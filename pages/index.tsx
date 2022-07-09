@@ -7,7 +7,7 @@ import { Slide2 } from '@@/layouts/Slide2'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
 
-const Home: NextPageWithLayout = () => {
+const Home: NextPageWithLayout = (): JSX.Element => {
   return (
     <div>
       <BannerTopSlide />

@@ -1,15 +1,12 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Main, NextScript } from 'next/document'
 
-export default function Document() {
+export default function Document(): JSX.Element {
   return (
     <Html>
-      <Head>
-        <title>AG-Ecome | Thế giới mua sắm trực tuyến</title>
-      </Head>
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }

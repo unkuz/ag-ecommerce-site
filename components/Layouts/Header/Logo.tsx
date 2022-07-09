@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import { ROUTES } from "@@/routes";
+import React from 'react'
+import Link from 'next/link'
+import { ROUTES } from '@@/routes'
 
-export const Logo = () => {
+export const Logo = (): JSX.Element => {
   return (
     <div className="logo">
       <Link href={ROUTES.HOME} passHref>
@@ -11,5 +11,5 @@ export const Logo = () => {
         </a>
       </Link>
     </div>
-  );
-};
+  )
+}

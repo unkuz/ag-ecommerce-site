@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-export const Account = () => {
+export const Account = (): JSX.Element => {
   return (
     <li className="user_hide_">
       <a href="#">
@@ -22,5 +22,5 @@ export const Account = () => {
         </ul>
       </div>
     </li>
-  );
-};
+  )
+}

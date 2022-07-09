@@ -1,9 +1,9 @@
-import React from "react";
-import { Account } from "./Account";
-import { Cart } from "./Cart";
-import { Notification } from "./Notification";
+import React from 'react'
+import { Account } from './Account'
+import { Cart } from './Cart'
+import { Notification } from './Notification'
 
-export const CartBellPhone = () => {
+export const CartBellPhone = (): JSX.Element => {
   return (
     <div className="cart_bell_phone">
       <ul>
@@ -12,5 +12,5 @@ export const CartBellPhone = () => {
         <Account />
       </ul>
     </div>
-  );
-};
+  )
+}
