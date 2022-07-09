@@ -1,17 +1,17 @@
-import React, { useCallback } from "react";
-import { Logo } from "./../Logo";
-import { CartBellPhone } from "./CartBellPhone";
+import React, { useCallback } from 'react'
+import { Logo } from './../Logo'
+import { CartBellPhone } from './CartBellPhone'
 
-import { Search } from "./Search";
+import { Search } from './Search'
 
 type TProps = {
-  onShowNav: () => void;
-};
+  onShowNav: () => void
+}
 
 export const TopBarV2 = ({ onShowNav }: TProps): JSX.Element => {
   const onShowNavMobile = useCallback(() => {
-    onShowNav();
-  }, [onShowNav]);
+    onShowNav()
+  }, [onShowNav])
   return (
     <div className="topbar_v2">
       <div className="container">
@@ -20,8 +20,7 @@ export const TopBarV2 = ({ onShowNav }: TProps): JSX.Element => {
             <Logo />
             <div className="menu_moblie">
               <button className="open-mnav" onClick={onShowNavMobile}>
-                <span className="fa fa-bars" style={{ marginRight: 5 }} /> Danh
-                Mục
+                <span className="fa fa-bars" style={{ marginRight: 5 }} /> Danh Mục
               </button>
             </div>
           </div>
@@ -34,5 +33,5 @@ export const TopBarV2 = ({ onShowNav }: TProps): JSX.Element => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,28 +1,28 @@
-import { categories } from "@@/constants/nav";
-import { useHoverOutSide } from "@@/hooks/useHoverOutSide";
-import React, { useCallback, useRef, useState } from "react";
-import Link from "next/link";
-import { ROUTES } from "@@/routes";
+import { categories } from '@@/constants/nav'
+import { useHoverOutSide } from '@@/hooks/useHoverOutSide'
+import React, { useCallback, useRef, useState } from 'react'
+import Link from 'next/link'
+import { ROUTES } from '@@/routes'
 
 type TProps = {
-  onShowNav: () => void;
-};
+  onShowNav: () => void
+}
 
 export const MenuHeader = ({ onShowNav }: TProps): JSX.Element => {
-  const [isShowNavDesktop, setIsShowNavDesktop] = useState(false);
-  const categoryRef = useRef(null);
+  const [isShowNavDesktop, setIsShowNavDesktop] = useState(false)
+  const categoryRef = useRef(null)
 
   const onShowNavDesktop = useCallback(() => {
-    setIsShowNavDesktop(true);
-  }, []);
+    setIsShowNavDesktop(true)
+  }, [])
 
   const onShowNavMobile = useCallback(() => {
-    onShowNav();
-  }, [onShowNav]);
+    onShowNav()
+  }, [onShowNav])
 
   useHoverOutSide(categoryRef.current, () => {
-    setIsShowNavDesktop(false);
-  });
+    setIsShowNavDesktop(false)
+  })
   return (
     <div className="menu_header">
       <div className="container">
@@ -31,18 +31,14 @@ export const MenuHeader = ({ onShowNav }: TProps): JSX.Element => {
             <ul className="lv_1">
               <li className="show_categories" ref={categoryRef}>
                 <a role="button" onMouseEnter={onShowNavDesktop}>
-                  <span className="fa fa-bars" style={{ marginRight: 5 }} />{" "}
-                  Danh mục
+                  <span className="fa fa-bars" style={{ marginRight: 5 }} /> Danh mục
                 </a>
                 {isShowNavDesktop && (
-                  <ul
-                    className="hide_categories lv_2"
-                    style={{ display: "block" }}
-                  >
+                  <ul className="hide_categories lv_2" style={{ display: 'block' }}>
                     {categories.map((i, idx) => (
                       <>
                         <li className="list_categories">
-                          <a style={{ borderTop: "1px solid #eee" }}>
+                          <a style={{ borderTop: '1px solid #eee' }}>
                             {i.title}
                             <i className="fa fa-angle-right" />
                           </a>
@@ -67,10 +63,7 @@ export const MenuHeader = ({ onShowNav }: TProps): JSX.Element => {
               <li>
                 <Link href={ROUTES.HOME}>
                   <a>
-                    <span
-                      className="fa fa-home"
-                      style={{ marginRight: 5, fontSize: 16 }}
-                    />
+                    <span className="fa fa-home" style={{ marginRight: 5, fontSize: 16 }} />
                     Home
                   </a>
                 </Link>
@@ -92,10 +85,7 @@ export const MenuHeader = ({ onShowNav }: TProps): JSX.Element => {
               <li>
                 <Link href={ROUTES.PRESENT_PAGE}>
                   <a>
-                    <span
-                      className="fa fa-gift"
-                      style={{ marginRight: 5, fontSize: 16 }}
-                    />
+                    <span className="fa fa-gift" style={{ marginRight: 5, fontSize: 16 }} />
                     Quà tặng
                   </a>
                 </Link>
@@ -168,5 +158,5 @@ export const MenuHeader = ({ onShowNav }: TProps): JSX.Element => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

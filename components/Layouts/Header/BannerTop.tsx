@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const BannerTop = (): JSX.Element => {
   return (
@@ -7,5 +7,5 @@ export const BannerTop = (): JSX.Element => {
         <img src="images/a1q.png" alt="" />
       </a>
     </div>
-  );
-};
+  )
+}

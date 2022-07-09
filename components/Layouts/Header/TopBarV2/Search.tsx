@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 export const Search = (): JSX.Element => {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('')
 
   const onChangeSearchValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchValue(e.target.value);
-  };
+    setSearchValue(e.target.value)
+  }
 
   return (
     <div className="search_form">
@@ -42,5 +42,5 @@ export const Search = (): JSX.Element => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}

@@ -1,13 +1,13 @@
-import React, { useCallback } from "react";
+import React, { useCallback } from 'react'
 
 type TProps = {
-  onClose: () => void;
-};
+  onClose: () => void
+}
 
 export const NavMobile = ({ onClose }: TProps): JSX.Element => {
   const onCloseNav = useCallback(() => {
-    onClose();
-  }, [onClose]);
+    onClose()
+  }, [onClose])
 
   return (
     <div className="m-nav active">
@@ -300,5 +300,5 @@ export const NavMobile = ({ onClose }: TProps): JSX.Element => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
