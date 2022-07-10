@@ -2,6 +2,7 @@ import { Btn_Type, SlideBtnNextPrev } from '@@/components/Common/SlideNext'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import cls from 'classnames'
 import styles from './Slice.module.scss'
+import { useSlide } from '@@/hooks/useSlide'
 
 const images = [
   { id: 1, img: 'images/12.png' },
@@ -11,38 +12,7 @@ const images = [
 
 export const Slide = (): JSX.Element => {
   const containerRef = useRef<HTMLInputElement>(null)
-
-  const [widthContainer, setwidthContainer] = useState<number>(0)
-
-  const [currentIdx, setCurrentIdx] = useState<number>(0)
-
-  const onNextPrev = (type: Btn_Type) => {
-    let totalImg = images.length
-    if (currentIdx >= totalImg! - 1 && type === Btn_Type.NEXT) {
-      return
-    }
-    if (currentIdx === 0 && type === Btn_Type.PREV) {
-      return
-    }
-    setCurrentIdx((prev) => prev + (type === Btn_Type.NEXT ? 1 : -1))
-  }
-
-  useEffect(() => {
-    containerRef.current!.style.transform = `translateX(${-widthContainer * currentIdx}px)`
-  }, [currentIdx, widthContainer])
-
-  const onResize = useCallback(() => {
-    setwidthContainer(containerRef.current!.getClientRects()[0].width)
-  }, [])
-
-  useEffect(() => {
-    onResize()
-    window.addEventListener('resize', onResize)
-
-    return () => {
-      window.removeEventListener('resize', onResize)
-    }
-  }, [onResize])
+  const { onNextPrev, currentIdx } = useSlide(containerRef, images)
 
   return (
     <div className={cls('grid_item', styles.slide_container)}>
