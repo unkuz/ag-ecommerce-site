@@ -2,11 +2,14 @@
   display: inline-flex;
   height: 100%;
   transition: 1.5s ease;
+  user-select: none;
 }
 .slide_container {
   overflow: hidden;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .dot {
