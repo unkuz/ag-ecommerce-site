@@ -1,6 +1,6 @@
-import React, { useCallback, useState } from 'react'
-import { clearScreenDown } from 'readline'
 import cls from 'classnames'
+import { useCallback, useState } from 'react'
+import { Slide } from './Slide'
 
 enum TABS {
   TAB1 = 'TAB1',
@@ -14,12 +14,12 @@ const tabs = [
     else: TABS.TAB1,
     content: [
       { name: 'Trang phục', icon: 'icofont-jacket' },
-      { name: 'Chăm sóc cá nhân &amp; Làm đẹp', icon: 'icofont-ui-touch-phone' },
+      { name: 'Chăm sóc cá nhân & Làm đẹp', icon: 'icofont-ui-touch-phone' },
       { name: 'Hàng điện tử tiêu dùng', icon: 'icofont-ui-touch-phone' },
       { name: 'Đồng hồ, trang sức, kính', icon: 'icofont-ui-touch-phone' },
       { name: 'Nhà và Vườn', icon: 'icofont-cement-mix' },
-      { name: 'Bao bì &amp; In ấn', icon: 'icofont-cube' },
-      { name: 'Thể thao &amp; giải trí', icon: 'icofont-muscle-weight' },
+      { name: 'Bao bì & In ấn', icon: 'icofont-cube' },
+      { name: 'Thể thao & giải trí', icon: 'icofont-muscle-weight' },
       { name: 'Hành lý, túi và cặp', icon: 'icofont-bag-alt' },
       { name: 'Quà tặng và hàng thủ công', icon: 'icofont-gift' },
       { name: 'Sức khỏe và y tế', icon: 'icofont-first-aid' },
@@ -31,12 +31,12 @@ const tabs = [
     else: TABS.TAB2,
     content: [
       { name: 'Trang phục', icon: 'icofont-jacket' },
-      { name: 'Chăm sóc cá nhân &amp; Làm đẹp', icon: 'icofont-ui-touch-phone' },
+      { name: 'Chăm sóc cá nhân & Làm đẹp', icon: 'icofont-ui-touch-phone' },
       { name: 'Hàng điện tử tiêu dùng', icon: 'icofont-ui-touch-phone' },
       { name: 'Đồng hồ, trang sức, kính', icon: 'icofont-ui-touch-phone' },
       { name: 'Nhà và Vườn', icon: 'icofont-cement-mix' },
-      { name: 'Bao bì &amp; In ấn', icon: 'icofont-cube' },
-      { name: 'Thể thao &amp; giải trí', icon: 'icofont-muscle-weight' },
+      { name: 'Bao bì & In ấn', icon: 'icofont-cube' },
+      { name: 'Thể thao & giải trí', icon: 'icofont-muscle-weight' },
       { name: 'Hành lý, túi và cặp', icon: 'icofont-bag-alt' },
       { name: 'Quà tặng và hàng thủ công', icon: 'icofont-gift' },
       { name: 'Sức khỏe và y tế', icon: 'icofont-first-aid' },
@@ -98,40 +98,22 @@ export const BannerTopSlide = () => {
                 </div>
               </div>
             </div>
-            <div className="grid_item">
-              <section className="slide_banner_top owl-carousel">
-                <div className="item_slide">
-                  <a>
-                    <img src="images/12.png" />
-                  </a>
-                </div>
-                <div className="item_slide">
-                  <a>
-                    <img src="images/1.webp" />
-                  </a>
-                </div>
-                <div className="item_slide">
-                  <a>
-                    <img src="images/2.webp" />
-                  </a>
-                </div>
-              </section>
-            </div>
+            <Slide />
             <div className="grid_item">
               <div className="right_banners bn_group">
                 <div className="top_rightBn bn_item">
                   <a className="hvr-grow">
-                    <img src="images/b7.jpg" />
+                    <img src="images/b7.jpg" alt="" />
                   </a>
                 </div>
                 <div className="bottom_rightBn bn_item">
                   <a className="hvr-grow">
-                    <img src="images/t2.jpg" />
+                    <img src="images/t2.jpg" alt="" />
                   </a>
                 </div>
                 <div className="bottom_rightBn bn_item">
                   <a className="hvr-grow">
-                    <img src="images/b5.png" />
+                    <img src="images/b5.png" alt="" />
                   </a>
                 </div>
               </div>

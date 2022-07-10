@@ -1,0 +1,25 @@
+.slide {
+  display: inline-flex;
+  height: 100%;
+  transition: 1.5s ease;
+}
+.slide_container {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  bottom: 10px;
+  right: 50%;
+  display: flex;
+
+  transform: translateX(50%);
+  div {
+    width: 16px;
+    height: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+}

@@ -1,5 +1,5 @@
 import { BannerContent } from '@@/layouts/BannerContent'
-import { BannerTopSlide } from '@@/layouts/BannerTopSlide'
+import { BannerTopSlide } from '@@/components/Home/BannnerTop/BannerTopSlide'
 import { ExclusiveProducts } from '@@/layouts/ExclusiveProducts'
 import { FlashSale } from '@@/layouts/FlashSale'
 import { MainLayout } from '@@/layouts/MainLayout'
@@ -16,7 +16,6 @@ const Home: NextPageWithLayout = (): JSX.Element => {
       <FlashSale />
       <BannerContent />
       <ExclusiveProducts />
-
       <section className="caterory_5 news_">
         <div className="container">
           <div className="row">
