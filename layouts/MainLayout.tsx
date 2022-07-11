@@ -1,7 +1,7 @@
 import { Footer } from '@@/components/Layouts/Footer'
 import { Header } from '@@/components/Layouts/Header'
+import { ScrollTop } from '@@/components/Utils/ScrollTop'
 import React, { ReactElement } from 'react'
-import { ScrollTop } from './ScrollTop'
 
 type IProps = {
   children: ReactElement
