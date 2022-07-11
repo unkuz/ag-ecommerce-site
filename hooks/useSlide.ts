@@ -6,7 +6,7 @@ type IImage = {
   image: string
 }[]
 
-export const useSlide = (containerRef: { current: HTMLElement }, images: IImage) => {
+export const useSlide = (containerRef: any, images: any) => {
   const [widthContainer, setwidthContainer] = useState<number>(0)
 
   const [currentIdx, setCurrentIdx] = useState<number>(0)

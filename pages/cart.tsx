@@ -1,10 +1,10 @@
-import { NextPage } from "next";
-import React from "react";
+import { NextPage } from 'next'
+import React from 'react'
 
 const Cart: NextPage = () => {
   return (
     <div>
-      {" "}
+      {' '}
       <header>
         {/* Banner_Top */}
         {/* <div class="banner_top">
@@ -26,50 +26,50 @@ const Cart: NextPage = () => {
 <a href=""><img src="images/bs1.svg" alt=""><span>Cá nhân hệ thống kinh doanh</span> <i class="line"></i></a>
 </div> */}
               <div className="item">
-                <a href>
-                  <img src="images/house.svg" alt />
+                <a>
+                  <img src="images/house.svg" alt="" />
                   <span>Mua bán nhà đất</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/air2.svg" alt />
+                <a>
+                  <img src="images/air2.svg" alt="" />
                   <span>Đặt vé máy bay</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/car-insurance.svg" alt />
+                <a>
+                  <img src="images/car-insurance.svg" alt="" />
                   <span>Đặt vé tàu - xe</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/air.svg" alt />
+                <a>
+                  <img src="images/air.svg" alt="" />
                   <span>Tour du lịch</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/booking.svg" alt />
+                <a>
+                  <img src="images/booking.svg" alt="" />
                   <span>Đặt phòng khách sạn</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/examine.svg" alt />
+                <a>
+                  <img src="images/examine.svg" alt="" />
                   <span>Sức khỏe &amp; Y tế</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/ticket.svg" alt />
+                <a>
+                  <img src="images/ticket.svg" alt="" />
                   <span>Vé xem phim</span> <i className="line" />
                 </a>
               </div>
               <div className="item">
-                <a href>
-                  <img src="images/work.svg" alt />
+                <a>
+                  <img src="images/work.svg" alt="" />
                   <span>Cổ phẩn Công ty</span> <i className="line" />
                 </a>
               </div>
@@ -357,8 +357,7 @@ const Cart: NextPage = () => {
                     </ul>
                   </nav>
                   <button className="open-mnav">
-                    <span className="fa fa-bars" style={{ marginRight: 5 }} />{" "}
-                    Danh Mục
+                    <span className="fa fa-bars" style={{ marginRight: 5 }} /> Danh Mục
                   </button>
                 </div>
                 {/* End_Menu_Mobile */}
@@ -366,12 +365,7 @@ const Cart: NextPage = () => {
               <div className="col-md-6 col-sm-6">
                 <div className="search_form">
                   <form action className="search-wrapper">
-                    <input
-                      type="text"
-                      placeholder="Tìm kiếm..."
-                      required
-                      defaultValue
-                    />
+                    <input type="text" placeholder="Tìm kiếm..." required defaultValue />
                     <button type="submit">
                       <span className="lnr lnr-magnifier" />
                     </button>
@@ -405,80 +399,13 @@ const Cart: NextPage = () => {
                   <ul>
                     <li className="hide_cart">
                       <a href="#">
-                        <img src="images/cart.png" alt />
+                        <img src="images/cart.png" alt="" />
                         {/* <span>3</span> */}
                       </a>
-                      {/* <div class="cart_view">
-<h1>Sản phẩm vừa thêm</h1>
-
-<div class="limit">
-<div class="products_inCart">
-<div class="product__1img">
-<a href=""><img src="images/samsung3.jpg" alt=""></a>
-</div>
-
-<div class="product__1Content">
-<h4><a href="">Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức</a></h4>
-<div class="t_pri">
-<p>x1 <span>10.999.000đ</span></p>
-<button><span>Xóa</span></button>
-</div>
-
-</div>
-</div>
-
-<div class="products_inCart">
-<div class="product__1img">
-<a href=""><img src="images/pd2.jpg" alt=""></a>
-</div>
-
-<div class="product__1Content">
-<h4><a href="">Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức</a></h4>
-<div class="t_pri">
-<p>x1 <span>10.999.000đ</span></p>
-<button><span>Xóa</span></button>
-</div>
-</div>
-</div>
-
-<div class="products_inCart">
-<div class="product__1img">
-<a href=""><img src="images/pd3.jpg" alt=""></a>
-</div>
-
-<div class="product__1Content">
-<h4><a href="">Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức</a></h4>
-<div class="t_pri">
-<p>x1 <span>10.999.000đ</span></p>
-<button><span>Xóa</span></button>
-</div>
-</div>
-</div>
-
-<div class="products_inCart">
-<div class="product__1img">
-<a href=""><img src="images/pd3.jpg" alt=""></a>
-</div>
-
-<div class="product__1Content">
-<h4><a href="">Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức</a></h4>
-<div class="t_pri">
-<p>x1 <span>10.999.000đ</span></p>
-<button><span>Xóa</span></button>
-</div>
-</div>
-</div>
-</div>
-
-<div class="view_andCheckout_btns">
-<a href="cart.html" class="b1_cart">Đến giỏ hàng</a>
-<a href="checkout.html" class="b2_checkout">Thanh toán tất cả</a>
-</div>
-</div> */}
                     </li>
                     <li className="hide_notification">
                       <a href="#">
-                        <img src="images/bell.png" alt />
+                        <img src="images/bell.png" alt="" />
                         <span>3</span>
                       </a>
                       <div className="notification_view">
@@ -487,7 +414,7 @@ const Cart: NextPage = () => {
                           <div className="products_inCart">
                             <div className="product__1img">
                               <a href>
-                                <img src="images/vlt.png" alt />
+                                <img src="images/vlt.png" alt="" />
                               </a>
                             </div>
                             <div className="product__1Content">
@@ -495,7 +422,7 @@ const Cart: NextPage = () => {
                                 <a href>Bó hoa ăn được mùa Valentine từ 55K</a>
                               </h4>
                               <div className="t_pri">
-                                <time style={{ color: "#999", fontSize: 13 }}>
+                                <time style={{ color: '#999', fontSize: 13 }}>
                                   10:22 11/02/2020
                                 </time>
                                 <button>
@@ -507,7 +434,7 @@ const Cart: NextPage = () => {
                           <div className="products_inCart">
                             <div className="product__1img">
                               <a href>
-                                <img src="images/vlt2.png" alt />
+                                <img src="images/vlt2.png" alt="" />
                               </a>
                             </div>
                             <div className="product__1Content">
@@ -515,7 +442,7 @@ const Cart: NextPage = () => {
                                 <a href>Gấu siêu to khổng lồ | Đồng giá 99K</a>
                               </h4>
                               <div className="t_pri">
-                                <time style={{ color: "#999", fontSize: 13 }}>
+                                <time style={{ color: '#999', fontSize: 13 }}>
                                   10:22 11/02/2020
                                 </time>
                                 <button>
@@ -527,7 +454,7 @@ const Cart: NextPage = () => {
                           <div className="products_inCart">
                             <div className="product__1img">
                               <a href>
-                                <img src="images/km.png" alt />
+                                <img src="images/km.png" alt="" />
                               </a>
                             </div>
                             <div className="product__1Content">
@@ -535,7 +462,7 @@ const Cart: NextPage = () => {
                                 <a href>Mừng thành viên mới, Voucher tới </a>
                               </h4>
                               <div className="t_pri">
-                                <time style={{ color: "#999", fontSize: 13 }}>
+                                <time style={{ color: '#999', fontSize: 13 }}>
                                   10:22 11/02/2020
                                 </time>
                                 <button>
@@ -547,7 +474,7 @@ const Cart: NextPage = () => {
                           <div className="products_inCart">
                             <div className="product__1img">
                               <a href>
-                                <img src="images/km.png" alt />
+                                <img src="images/km.png" alt="" />
                               </a>
                             </div>
                             <div className="product__1Content">
@@ -555,7 +482,7 @@ const Cart: NextPage = () => {
                                 <a href>Mừng thành viên mới, Voucher tới </a>
                               </h4>
                               <div className="t_pri">
-                                <time style={{ color: "#999", fontSize: 13 }}>
+                                <time style={{ color: '#999', fontSize: 13 }}>
                                   10:22 11/02/2020
                                 </time>
                                 <button>
@@ -572,29 +499,12 @@ const Cart: NextPage = () => {
                         </div>
                       </div>
                     </li>
-                    {/* <li class="user_box__">
-<div class="btn_drop_user" id="drop_user">
-<img class="user" src="images/avt_ihr.jpeg" alt="">
-<strong>User Name</strong>
-<i class="fa fa-caret-down" style="font-size: 12px;"></i>
-</div>
 
-<div class="dropcontent_user">
-<ul>
-<li><a href="">Thông tin tài khoản</a></li>
-<li><a href="">Theo dõi đơn hàng</a></li>
-<li><a href="">Đăng xuất</a></li>
-</ul>
-</div>
-</li> */}
                     <li className="user_hide_">
                       <a href="#">
-                        <img className="user" src="images/avt_ihr.jpeg" alt />
+                        <img className="user" src="images/avt_ihr.jpeg" alt="" />
                         <strong>User Name</strong>
-                        <i
-                          className="fa fa-caret-down"
-                          style={{ fontSize: 12 }}
-                        />
+                        <i className="fa fa-caret-down" style={{ fontSize: 12 }} />
                       </a>
                       <div className="user_show">
                         <ul>
@@ -623,22 +533,17 @@ const Cart: NextPage = () => {
                 <ul className="lv_1">
                   <li>
                     <a href>
-                      {" "}
-                      <span
-                        className="fa fa-home"
-                        style={{ marginRight: 5, fontSize: 16 }}
-                      />
+                      <span className="fa fa-home" style={{ marginRight: 5, fontSize: 16 }} />
                       Home
                     </a>
                   </li>
                   <li className="show_categories">
                     <a href="#">
-                      <span className="fa fa-bars" style={{ marginRight: 5 }} />{" "}
-                      Danh mục
+                      <span className="fa fa-bars" style={{ marginRight: 5 }} /> Danh mục
                     </a>
                     <ul className="hide_categories lv_2">
                       <li className="list_categories">
-                        <a href style={{ borderTop: "1px solid #eee" }}>
+                        <a href style={{ borderTop: '1px solid #eee' }}>
                           Thiết bị điện tử
                           <i className="fa fa-angle-right" />
                         </a>
@@ -738,9 +643,7 @@ const Cart: NextPage = () => {
                         </a>
                         <ul className="categories_lv_3">
                           <li style={{ marginBottom: 10 }}>
-                            <h4 className="title_cg">
-                              TV &amp; Thiết bị gia dụng
-                            </h4>
+                            <h4 className="title_cg">TV &amp; Thiết bị gia dụng</h4>
                           </li>
                           <li>
                             <a href>Thiết bị điện tử</a>
@@ -928,9 +831,7 @@ const Cart: NextPage = () => {
                         </a>
                         <ul className="categories_lv_3">
                           <li style={{ marginBottom: 10 }}>
-                            <h4 className="title_cg">
-                              Hàng gia dụng &amp; Đời sống
-                            </h4>
+                            <h4 className="title_cg">Hàng gia dụng &amp; Đời sống</h4>
                           </li>
                           <li>
                             <a href>Thiết bị điện tử</a>
@@ -1165,9 +1066,7 @@ const Cart: NextPage = () => {
                         </a>
                         <ul className="categories_lv_3">
                           <li style={{ marginBottom: 10 }}>
-                            <h4 className="title_cg">
-                              Ôtô, Xe máy &amp; Thiết bị định vị
-                            </h4>
+                            <h4 className="title_cg">Ôtô, Xe máy &amp; Thiết bị định vị</h4>
                           </li>
                           <li>
                             <a href>Thiết bị điện tử</a>
@@ -1221,29 +1120,20 @@ const Cart: NextPage = () => {
                   </li>
                   <li>
                     <a href>
-                      <span
-                        className="fa fa-gift"
-                        style={{ marginRight: 5, fontSize: 16 }}
-                      />
+                      <span className="fa fa-gift" style={{ marginRight: 5, fontSize: 16 }} />
                       Quà tặng
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <span
-                        className="fa fa-pencil"
-                        style={{ marginRight: 5 }}
-                      />
+                      <span className="fa fa-pencil" style={{ marginRight: 5 }} />
                       Bán hàng cùng DV
                     </a>
                   </li>
                   <li>
                     <a className="menu_end" href>
-                      {" "}
-                      <span
-                        className="fa fa-download"
-                        style={{ marginRight: 5 }}
-                      />
+                      {' '}
+                      <span className="fa fa-download" style={{ marginRight: 5 }} />
                       Tải ứng dụng
                     </a>
                   </li>
@@ -1253,37 +1143,37 @@ const Cart: NextPage = () => {
                 <ul>
                   <li>
                     <a href>
-                      <img src="images/home.png" alt />
+                      <img src="images/home.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/mess.png" alt />
+                      <img src="images/mess.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/tmdt.png" alt />
+                      <img src="images/tmdt.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/vi.png" alt />
+                      <img src="images/vi.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/dn.png" alt />
+                      <img src="images/dn.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/code_sale.png" alt />
+                      <img src="images/code_sale.png" alt="" />
                     </a>
                   </li>
                   <li>
                     <a href>
-                      <img src="images/voucher.png" alt />
+                      <img src="images/voucher.png" alt="" />
                     </a>
                   </li>
                 </ul>
@@ -1294,7 +1184,7 @@ const Cart: NextPage = () => {
       </header>
       <section className="cart">
         <div className="container">
-          <ol className="breadcrumb" style={{ background: "none", padding: 0 }}>
+          <ol className="breadcrumb" style={{ background: 'none', padding: 0 }}>
             <li className="breadcrumb-item">
               <a href="tmdt_home.html">Trang chủ</a>
             </li>
@@ -1311,7 +1201,7 @@ const Cart: NextPage = () => {
                 <div className="products_cart">
                   <div className="store_name">
                     <a href>
-                      <img src="images/q1.png" alt />
+                      <img src="images/q1.png" alt="" />
                       Store Name 1
                     </a>
                   </div>
@@ -1322,14 +1212,13 @@ const Cart: NextPage = () => {
                     </label>
                     <div className="cart_img">
                       <a href>
-                        <img src="images/samsung3.jpg" alt />
+                        <img src="images/samsung3.jpg" alt="" />
                       </a>
                     </div>
                     <div className="proName_cart">
                       <h4>
                         <a href>
-                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân
-                          phối chính thức
+                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức
                         </a>
                       </h4>
                       <div className="prices">
@@ -1364,8 +1253,7 @@ const Cart: NextPage = () => {
                     <div className="proName_cart">
                       <h4>
                         <a href>
-                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân
-                          phối chính thức
+                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức
                         </a>
                       </h4>
                       <div className="prices">
@@ -1408,8 +1296,7 @@ const Cart: NextPage = () => {
                     <div className="proName_cart">
                       <h4>
                         <a href>
-                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân
-                          phối chính thức
+                          Điện thoại Samsung Galaxy A20s (32GB/3GB) - Hãng phân phối chính thức
                         </a>
                       </h4>
                       <div className="prices">
@@ -1510,9 +1397,7 @@ const Cart: NextPage = () => {
                                 <img src="images/h1_s1.jpg" alt />
                               </div>
                               <div className="sale_code1Content">
-                                <p>
-                                  Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k
-                                </p>
+                                <p>Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k</p>
                                 <time>HSD: 29/02/2020</time>
                               </div>
                             </div>
@@ -1527,9 +1412,7 @@ const Cart: NextPage = () => {
                                 <img src="images/q1.png" alt />
                               </div>
                               <div className="sale_code1Content">
-                                <p>
-                                  Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k
-                                </p>
+                                <p>Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k</p>
                                 <time>HSD: 29/02/2020</time>
                               </div>
                             </div>
@@ -1544,9 +1427,7 @@ const Cart: NextPage = () => {
                                 <img src="images/q1.png" alt />
                               </div>
                               <div className="sale_code1Content">
-                                <p>
-                                  Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k
-                                </p>
+                                <p>Giảm 100% Đơn Tối Thiểu 0₫ giảm tối đa 40k</p>
                                 <time>HSD: 29/02/2020</time>
                               </div>
                             </div>
@@ -1804,12 +1685,8 @@ const Cart: NextPage = () => {
                   </li>
                   <li>
                     <a href>
-                      <span
-                        className="lnr lnr-clock clock"
-                        style={{ width: 45 }}
-                      />
-                      Thứ 2 đến CN: 9h - 18h (Hotline), 7h - 22h(chat trực
-                      tuyến)
+                      <span className="lnr lnr-clock clock" style={{ width: 45 }} />
+                      Thứ 2 đến CN: 9h - 18h (Hotline), 7h - 22h(chat trực tuyến)
                     </a>
                   </li>
                 </ul>
@@ -1834,7 +1711,7 @@ const Cart: NextPage = () => {
                   </li>
                   <li>
                     <a href>
-                      <span style={{ fontWeight: "bold" }}>Z</span>Zalo
+                      <span style={{ fontWeight: 'bold' }}>Z</span>Zalo
                     </a>
                   </li>
                   <li>
@@ -1983,11 +1860,7 @@ const Cart: NextPage = () => {
                 </h4>
                 <div className="certification">
                   <a href>
-                    <img
-                      src="images/google.jpg"
-                      alt
-                      style={{ marginRight: 15 }}
-                    />
+                    <img src="images/google.jpg" alt style={{ marginRight: 15 }} />
                   </a>
                   <a href>
                     <img src="images/app.jpg" alt />
@@ -2027,29 +1900,17 @@ const Cart: NextPage = () => {
               <ul>
                 <li>
                   <a href>
-                    <img
-                      src="images/n1.png"
-                      alt
-                      style={{ width: 125, padding: 6 }}
-                    />
+                    <img src="images/n1.png" alt style={{ width: 125, padding: 6 }} />
                   </a>
                 </li>
                 <li>
                   <a href>
-                    <img
-                      src="images/n2.png"
-                      alt
-                      style={{ width: 125, padding: 6 }}
-                    />
+                    <img src="images/n2.png" alt style={{ width: 125, padding: 6 }} />
                   </a>
                 </li>
                 <li>
                   <a href>
-                    <img
-                      src="images/n3.png"
-                      alt
-                      style={{ width: 125, padding: 6 }}
-                    />
+                    <img src="images/n3.png" alt style={{ width: 125, padding: 6 }} />
                   </a>
                 </li>
               </ul>
@@ -2118,22 +1979,22 @@ const Cart: NextPage = () => {
         <div className="container">
           <div className="copyRight_">
             Copyright: © 2019/
-            <a href style={{ color: "#640fec" }}>
+            <a href style={{ color: '#640fec' }}>
               DVchat.vn
             </a>
             <br />
             Designed by DSCo., Ltd/
-            <a href style={{ color: "#060ef3" }}>
+            <a href style={{ color: '#060ef3' }}>
               ds.net.vn
             </a>
           </div>
         </div>
       </div>
       <a href="#" className="zoa-btn scroll_top">
-        <img src="images/left.png" style={{ borderRadius: "50%" }} />
+        <img src="images/left.png" style={{ borderRadius: '50%' }} />
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default Cart;
+export default Cart
