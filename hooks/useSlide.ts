@@ -1,7 +1,12 @@
 import { Btn_Type } from '@@/components/Common/SlideNext'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-export const useSlide = (containerRef: any, images: any) => {
+type IImage = {
+  id: string
+  image: string
+}[]
+
+export const useSlide = (containerRef: { current: HTMLElement }, images: IImage) => {
   const [widthContainer, setwidthContainer] = useState<number>(0)
 
   const [currentIdx, setCurrentIdx] = useState<number>(0)
@@ -25,10 +30,10 @@ export const useSlide = (containerRef: any, images: any) => {
     setwidthContainer(containerRef.current!.getClientRects()[0].width)
   }, [containerRef])
 
-  const touchStart = (e) => {
+  const touchStart = (e: TouchEvent) => {
     console.log(e)
   }
-  const touchEnd = (e) => {
+  const touchEnd = (e: TouchEvent) => {
     console.log(e)
   }
 
@@ -41,7 +46,7 @@ export const useSlide = (containerRef: any, images: any) => {
     return () => {
       window.removeEventListener('resize', onResize)
     }
-  }, [onResize])
+  }, [containerRef, onResize])
 
   return { onNextPrev, currentIdx }
 }

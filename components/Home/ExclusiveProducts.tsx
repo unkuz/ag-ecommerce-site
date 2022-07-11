@@ -17,7 +17,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/samsungbox.jpg" />
+                <img src="images/samsungbox.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -33,7 +33,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-xs-6 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/smartwatch3.jpg" alt />
+                <img src="images/smartwatch3.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -51,7 +51,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-xs-6 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/headphone3.jpg" />
+                <img src="images/headphone3.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -70,7 +70,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-xs-6 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/sound.jpg" />
+                <img src="images/sound.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -88,7 +88,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/usb.jpg" />
+                <img src="images/usb.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -104,7 +104,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/pd3.jpg" />
+                <img src="images/pd3.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -120,7 +120,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/flycam.jpg" />
+                <img src="images/flycam.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -136,7 +136,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/ubl.jpg" />
+                <img src="images/ubl.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -155,7 +155,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/ring.jpg" />
+                <img src="images/ring.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -171,7 +171,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/samsung3.jpg" />
+                <img src="images/samsung3.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -187,7 +187,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/sony2.jpg" />
+                <img src="images/sony2.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>
@@ -205,7 +205,7 @@ export const ExclusiveProducts = () => {
           <div className="col-md-2 col-sm-3 col-mobile  col_st fix_column">
             <div className="item_ex_pro">
               <a href="product_detail.html" className="hvr-grow">
-                <img src="images/sound2.jpg" />
+                <img src="images/sound2.jpg" alt="" />
               </a>
               <div className="flash_name">
                 <span>Computers &amp; Accessories</span>

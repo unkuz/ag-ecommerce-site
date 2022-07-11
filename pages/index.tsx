@@ -1,11 +1,11 @@
-import { BannerContent } from '@@/layouts/BannerContent'
 import { BannerTopSlide } from '@@/components/Home/BannnerTop/BannerTopSlide'
-import { ExclusiveProducts } from '@@/layouts/ExclusiveProducts'
-import { FlashSale } from '@@/layouts/FlashSale'
+import { ExclusiveProducts } from '@@/components/Home/ExclusiveProducts'
+import { FlashSale } from '@@/components/Home/FlashSale'
 import { MainLayout } from '@@/layouts/MainLayout'
-import { Slide2 } from '@@/layouts/Slide2'
+import { Slide2 } from '@@/components/Home/Slide2'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
+import { BannerContent } from '@@/components/Home/BannerContent'
 
 const Home: NextPageWithLayout = (): JSX.Element => {
   return (
