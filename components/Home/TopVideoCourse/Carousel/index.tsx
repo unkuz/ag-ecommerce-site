@@ -57,6 +57,19 @@ const courses = [
     voteAmount: '999',
     user: '323',
   },
+  {
+    id: 5,
+    imgBg: 'images/t5.jpg',
+    title: 'Nền tảng tiếng Anh cho người mới bắt đầu',
+    author: 'Nguyễn Đức Chung',
+    imgAuthor: 'images/4.png',
+    price: {
+      sale: '199.000đ',
+      inherit: '299.000đ',
+    },
+    voteAmount: '999',
+    user: '524',
+  },
 ]
 
 export const Carousel = () => {
@@ -64,7 +77,7 @@ export const Carousel = () => {
   const settings = {
     infinity: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     swipeToSlide: true,

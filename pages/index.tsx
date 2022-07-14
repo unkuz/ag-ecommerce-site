@@ -7,6 +7,8 @@ import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
 import { BannerContent } from '@@/components/Home/BannerContent'
 import { TopVideoCourse } from '@@/components/Home/TopVideoCourse/TopVideoCourse'
+import { PopularSearch } from '@@/components/Home/PopularSearch/PopularSearch'
+import { OtherProduct } from '@@/components/Home/OtherProducts/OtherProduct'
 
 const Home: NextPageWithLayout = (): JSX.Element => {
   return (
@@ -533,98 +535,9 @@ const Home: NextPageWithLayout = (): JSX.Element => {
           </div>
         </div>
       </section>
-      <section className="similar_product">
-        <div className="container">
-          <div className="title_primery v2">
-            <h1 className="t1">
-              Tìm kiếm phổ biến
-              <span />
-            </h1>
-          </div>
-          <div className="slide_similar_product owl-carousel">
-            <div className="item">
-              <div className="similar_product_img">
-                <a>
-                  <img alt="" src="images/i2.png" />
-                </a>
-              </div>
-              <div className="similar_product_price">
-                <span>Computers &amp; Accessories</span>
-                <h1>
-                  <a>Cordless TrackMan Wheel</a>
-                </h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="similar_product_img">
-                <a>
-                  <img alt="" src="images/h1_s1.jpg" />
-                </a>
-              </div>
-              <div className="similar_product_price">
-                <span>Computers &amp; Accessories</span>
-                <h1>
-                  <a>Cordless TrackMan Wheel</a>
-                </h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="similar_product_img">
-                <a>
-                  <img alt="" src="images/h1_s2.jpg" />
-                </a>
-              </div>
-              <div className="similar_product_price">
-                <span>Computers &amp; Accessories</span>
-                <h1>
-                  <a>Cordless TrackMan Wheel</a>
-                </h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="similar_product_img">
-                <a>
-                  <img alt="" src="images/h1_s3.jpg" />
-                </a>
-              </div>
-              <div className="similar_product_price">
-                <span>Computers &amp; Accessories</span>
-                <h1>
-                  <a>Cordless TrackMan Wheel</a>
-                </h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="similar_product_img">
-                <a>
-                  <img alt="" src="images/i2.png" />
-                </a>
-              </div>
-              <div className="similar_product_price">
-                <span>Computers &amp; Accessories</span>
-                <h1>
-                  <a>Cordless TrackMan Wheel</a>
-                </h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <PopularSearch />
+
       <div className="banner_content">
         <div className="container">
           <a>
@@ -632,105 +545,9 @@ const Home: NextPageWithLayout = (): JSX.Element => {
           </a>
         </div>
       </div>
-      <section className="exclusive_products selling_products">
-        <div className="container">
-          <div className="title_primery">
-            <h1 className="t1">
-              Các sản phẩm khác
-              <span />
-            </h1>
-            <a>
-              Xem thêm <span className="fa fa-angle-right" />
-            </a>
-          </div>
-          <div className="slide_flash owl-carousel">
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/pd3.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/tv2.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/macbook2.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/sound2.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/pd4.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-            <div className="item_flash">
-              <a href="product_detail.html">
-                <img alt="" src="images/samsungbox.jpg" />
-              </a>
-              <div className="flash_name">
-                <span>Computers &amp; Accessories</span>
-                <h1>Cordless TrackMan Wheel</h1>
-                <div className="prices">
-                  <span className="pri_1">199.000đ</span>
-                  <span className="pri_2">2.999.000đ</span>
-                </div>
-                <div className="sale_">-25%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <OtherProduct />
+
       <section className="btns_links">
         <div className="container">
           <div className="row">
