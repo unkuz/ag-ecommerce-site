@@ -10,7 +10,7 @@ const images = [
   { id: 3, img: 'images/2.webp' },
 ]
 
-const Carousel = () => {
+export const Carousel = () => {
   const [sliderRef, setSliderRef] = useState<any>(null)
   const settings = {
     infinity: true,
@@ -41,4 +41,3 @@ const Carousel = () => {
     </div>
   )
 }
-export default Carousel
