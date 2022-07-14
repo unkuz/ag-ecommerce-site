@@ -7,14 +7,13 @@ export enum Btn_Type {
   NEXT = 'NEXT',
 }
 
-interface IProps {
-  type: Btn_Type
-}
-
-export const SlideBtnNextPrev = ({ type }: IProps): JSX.Element => {
+export const SlideBtnNextPrev = (props: any): JSX.Element => {
   return (
-    <div className={`${styles.slide} ${type === Btn_Type.PREV ? styles.prev : styles.next}`}>
-      {type === Btn_Type.PREV ? (
+    <div
+      className={`${styles.slide} ${props.type === Btn_Type.PREV ? styles.prev : styles.next}`}
+      onClick={props.onClick}
+    >
+      {props.type === Btn_Type.PREV ? (
         <i className={cls('arrow_carrot-left', styles.arrow)} />
       ) : (
         <i className={cls('arrow_carrot-right', styles.arrow)} />

@@ -10,15 +10,23 @@ $space: 25px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 10px 0 #999;
-}
-.arrow {
-  font-family: 'ElegantIcons';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  .arrow {
+    text-align: center;
+    font-family: 'ElegantIcons';
+    font-style: normal;
+    font-size: x-large;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  &:hover {
+    background-image: linear-gradient(to right, #fed700 0%, #fd8d01 100%);
+    .arrow {
+      color: #fff;
+    }
+  }
 }
 
 .next {
