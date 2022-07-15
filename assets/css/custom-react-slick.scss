@@ -6,8 +6,20 @@
   position: relative;
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
 .slick-list .slick-slide {
   margin: 0;
+}
+
+.slick-arrow {
+  visibility: hidden;
 }
 
 .slick-dots {

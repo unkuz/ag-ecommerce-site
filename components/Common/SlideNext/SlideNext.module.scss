@@ -1,4 +1,4 @@
-$space: 25px;
+// $space: 25px;
 
 .slide {
   width: 35px;
@@ -31,12 +31,12 @@ $space: 25px;
 
 .next {
   top: 50%;
-  right: $space;
+  // right: $space;
   transform: translateY(-50%);
 }
 
 .prev {
   top: 50%;
-  left: $space;
+  // left: $space;
   transform: translateY(-50%);
 }

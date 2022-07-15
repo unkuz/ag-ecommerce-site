@@ -52,14 +52,39 @@ export const Carousel = () => {
     arrows: true,
     swipeToSlide: true,
     draggable: true,
-    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   }
   return (
     <div className={cls(styles.slick_slide_container)}>
       <div className="slide_similar_product">
         <Slider ref={setSliderRef} {...settings}>
           {products.map((product) => (
-            <div className="item" style={{ display: 'flex' }} key={product.id}>
+            <div className="item" key={product.id}>
               <div className="similar_product_img">
                 <a>
                   <img alt="" src={product.img} />
@@ -79,7 +104,7 @@ export const Carousel = () => {
         </Slider>
       </div>
       <div onClick={sliderRef?.slickNext}>
-        <SlideBtnNextPrev type={Btn_Type.NEXT} />
+        <SlideBtnNextPrev type={Btn_Type.NEXT} position={0} />
       </div>
     </div>
   )

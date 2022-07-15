@@ -6060,9 +6060,9 @@ body.overflow {
 .similar_product .slide_similar_product .item,
 .similar_product .slide_categoriesTop .item {
   background: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;

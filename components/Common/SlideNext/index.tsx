@@ -11,6 +11,11 @@ export const SlideBtnNextPrev = (props: any): JSX.Element => {
   return (
     <div
       className={`${styles.slide} ${props.type === Btn_Type.PREV ? styles.prev : styles.next}`}
+      style={
+        props.type === Btn_Type.PREV
+          ? { left: `${props.position}px` }
+          : { right: `${props.position}px` }
+      }
       onClick={props.onClick}
     >
       {props.type === Btn_Type.PREV ? (

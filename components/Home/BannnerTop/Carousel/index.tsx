@@ -33,10 +33,10 @@ export const Carousel = () => {
         ))}
       </Slider>
       <div onClick={sliderRef?.slickNext}>
-        <SlideBtnNextPrev type={Btn_Type.NEXT} />
+        <SlideBtnNextPrev type={Btn_Type.NEXT} position={25} />
       </div>
       <div onClick={sliderRef?.slickPrev}>
-        <SlideBtnNextPrev type={Btn_Type.PREV} />
+        <SlideBtnNextPrev type={Btn_Type.PREV} position={25} />
       </div>
     </div>
   )

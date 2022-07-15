@@ -66,12 +66,37 @@ export const Carousel = () => {
   const settings = {
     infinity: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     swipeToSlide: true,
     draggable: true,
-    // autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   }
   return (
     <div className={cls(styles.slick_slide_container)}>
@@ -96,7 +121,7 @@ export const Carousel = () => {
         </Slider>
       </div>
       <div onClick={sliderRef?.slickNext}>
-        <SlideBtnNextPrev type={Btn_Type.NEXT} />
+        <SlideBtnNextPrev type={Btn_Type.NEXT} position={0} />
       </div>
     </div>
   )
