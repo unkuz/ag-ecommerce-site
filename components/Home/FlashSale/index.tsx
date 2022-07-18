@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from './Carousel'
-import { CountdownTimer } from './CountdownTimer'
+import { CountdownTimer } from '../../Common/CountdownTimer'
 
 export const FlashSale = () => {
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000

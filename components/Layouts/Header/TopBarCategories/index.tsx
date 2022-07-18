@@ -64,10 +64,10 @@ export const TopBarCategories = () => {
               </div>
             ))}
           </Slider>
+          <div onClick={sliderRef?.slickNext}>
+            <SlideBtnNextPrev type={Btn_Type.NEXT} position={30} />
+          </div>
         </div>
-      </div>
-      <div onClick={sliderRef?.slickNext}>
-        <SlideBtnNextPrev type={Btn_Type.NEXT} position={30} />
       </div>
     </div>
   )
