@@ -2,20 +2,20 @@ import { BannerTopSlide } from '@@/components/Home/BannnerTop/BannerTopSlide'
 import { ExclusiveProducts } from '@@/components/Home/ExclusiveProducts'
 import { FlashSale } from '@@/components/Home/FlashSale'
 import { MainLayout } from '@@/layouts/MainLayout'
-import { Slide2 } from '@@/components/Home/Slide2'
 import { ReactElement } from 'react'
 import { NextPageWithLayout } from './_app'
 import { BannerContent } from '@@/components/Home/BannerContent'
 import { TopVideoCourse } from '@@/components/Home/TopVideoCourse/TopVideoCourse'
 import { PopularSearch } from '@@/components/Home/PopularSearch/PopularSearch'
 import { OtherProduct } from '@@/components/Home/OtherProducts/OtherProduct'
+import { LeadingProvider } from '@@/components/Home/LeadingProvider'
 
 const Home: NextPageWithLayout = (): JSX.Element => {
   return (
     <div>
       <BannerTopSlide />
       <BannerContent />
-      <Slide2 />
+      <LeadingProvider />
       <FlashSale />
       <BannerContent />
       <ExclusiveProducts />
@@ -538,13 +538,7 @@ const Home: NextPageWithLayout = (): JSX.Element => {
 
       <PopularSearch />
 
-      <div className="banner_content">
-        <div className="container">
-          <a>
-            <img alt="" src="images/banner.jpg" style={{ width: '100%' }} />
-          </a>
-        </div>
-      </div>
+      <BannerContent />
 
       <OtherProduct />
 
