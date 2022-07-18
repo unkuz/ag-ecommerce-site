@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import styles from './Carousel.module.scss'
 import cls from 'classnames'
 import { Btn_Type, SlideBtnNextPrev } from '../../../Common/SlideNext'
+import NextLink from 'next/link'
 
 const flashSaleProducts = [
   {
@@ -113,9 +114,11 @@ export const Carousel = () => {
         <Slider ref={setSliderRef} {...settings}>
           {flashSaleProducts.map((product) => (
             <div className="item_flash" key={product.id}>
-              <a href="product_detail.html">
-                <img src={product.img} alt="" />
-              </a>
+              <NextLink href="/product_detail" passHref>
+                <a>
+                  <img src={product.img} alt="" />
+                </a>
+              </NextLink>
               <div className="flash_name">
                 <span>{product.type}</span>
                 <h1>{product.title}</h1>
