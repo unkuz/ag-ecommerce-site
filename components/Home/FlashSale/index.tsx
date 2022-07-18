@@ -1,7 +1,12 @@
 import React from 'react'
 import { Carousel } from './Carousel'
+import { CountdownTimer } from './CountdownTimer'
 
 export const FlashSale = () => {
+  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000
+  const NOW_IN_MS = new Date().getTime()
+
+  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS
   return (
     <section className="flash_sale">
       <div className="container">
@@ -14,15 +19,7 @@ export const FlashSale = () => {
             Xem thêm <span className="fa fa-angle-right" />
           </a>
         </div>
-        <div className="flash_time">
-          <div className="end_time">Kết thúc trong:</div>
-          <div id="clockdown">
-            <span className="days">0</span>
-            <span className="hours">23</span>
-            <span className="minutes">30</span>
-            <span className="seconds">45</span>
-          </div>
-        </div>
+        <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         <Carousel />
       </div>
     </section>
