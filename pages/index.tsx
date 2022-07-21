@@ -12,8 +12,8 @@ import { LeadingProvider } from '@@/components/Home/LeadingProvider'
 import { SearchTrend } from '@@/components/Home/SearchTrend'
 import { News } from '@@/components/Home/News'
 import { TopSellingProduct } from '@@/components/Home/TopSellingProduct'
-import { CatergoriesBanner } from '@@/components/Home/CatergoriesBanner'
-import { Help } from '@@/components/Home/Help'
+import { CatergoriesBanner } from '@@/components/Common/CatergoriesBanner'
+import { Help } from '@@/components/Common/Help'
 
 const Home: NextPageWithLayout = (): JSX.Element => {
   return (
