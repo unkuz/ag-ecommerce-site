@@ -4,27 +4,10 @@ import React from 'react'
 const Cart: NextPage = () => {
   return (
     <div>
-      {' '}
       <header>
-        {/* Banner_Top */}
-        {/* <div class="banner_top">
-<a href=""><img src="images/banner_top.png" alt=""></a>
-</div> */}
-        {/* Banner_Top */}
         <div className="topBar_categories">
           <div className="container ctn_st">
             <div className="topbar_slide owl-carousel">
-              {/*   <div class="item">
-<a href=""><img src="images/import.svg" alt=""><span>Hàng hóa mua về bán</span> <i class="line"></i></a>
-</div>
-
-<div class="item">
-<a href=""><img src="images/delivery-man.svg" alt=""><span>Hàng hóa của các đơn vị SK-KD</span> <i class="line"></i></a>
-</div>
-
-<div class="item">
-<a href=""><img src="images/bs1.svg" alt=""><span>Cá nhân hệ thống kinh doanh</span> <i class="line"></i></a>
-</div> */}
               <div className="item">
                 <a>
                   <img src="images/house.svg" alt="" />
@@ -85,11 +68,10 @@ const Cart: NextPage = () => {
                     <img src="images/logo1.png" alt />
                   </a>
                 </div>
-                {/* Menu_Mobile */}
+
                 <div className="menu_moblie">
                   <nav className="d-nav">
                     <ul>
-                      {/* <li><a class="smooth" href="#" title="">Menu 1</a></li> */}
                       <li>
                         <a className="smooth" href="#" title>
                           Thiết bị điện tử
