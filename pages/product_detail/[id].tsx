@@ -1,6 +1,7 @@
+import { SlideProduct } from '@@/components/ProductDetail/SlideProduct'
 import { MainLayout } from '@@/layouts/MainLayout'
 import React, { ReactElement } from 'react'
-import { NextPageWithLayout } from './_app'
+import { NextPageWithLayout } from '../_app'
 
 const ProductDetail: NextPageWithLayout = () => {
   return (
@@ -171,7 +172,8 @@ const ProductDetail: NextPageWithLayout = () => {
               <div className="bg">
                 <div className="row ">
                   <div className="col-md-6">
-                    <div className="slide_product_drtail">
+                    <SlideProduct />
+                    {/* <div className="slide_product_drtail">
                       <div id="sync1" className="owl-carousel owl-theme">
                         <div className="item">
                           <div className="tiles">
@@ -206,7 +208,7 @@ const ProductDetail: NextPageWithLayout = () => {
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-md-6 col_p1">
                     <div className="detail_">

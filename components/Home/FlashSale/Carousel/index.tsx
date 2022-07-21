@@ -114,7 +114,7 @@ export const Carousel = () => {
         <Slider ref={setSliderRef} {...settings}>
           {flashSaleProducts.map((product) => (
             <div className="item_flash" key={product.id}>
-              <NextLink href="/product_detail" passHref>
+              <NextLink href={`/product_detail/${product.id}`} passHref>
                 <a>
                   <img src={product.img} alt="" />
                 </a>
