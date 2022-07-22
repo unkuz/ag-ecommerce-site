@@ -10,6 +10,10 @@
   margin: 0 10px;
 }
 
+.slick-slide {
+  height: 100%;
+}
+
 .slick-list {
   margin: 0 -10px;
 }
@@ -22,24 +26,7 @@
   visibility: hidden;
 }
 
-.slick-dots {
-  position: absolute;
-  bottom: 10px;
-  display: flex;
-  margin: auto;
-  li {
-    width: 16px;
-    height: 5px;
-    border-radius: 5px;
-    margin-right: 10px;
-    background-color: #999999;
-    z-index: 10;
-    border: none;
-    button {
-      opacity: 0;
-    }
-  }
-  li.slick-active {
-    background-color: #ffba15;
-  }
+.slick-dots.slick-thumb img {
+  display: block;
+  width: 100px;
 }
