@@ -3,8 +3,9 @@ import Slider from 'react-slick'
 import styles from './SlideProduct.module.scss'
 import cls from 'classnames'
 import { Btn_Type, SlideBtnNextPrev } from '../../Common/SlideNext'
+import { useHoverAndMouseMoveZoomImage } from '@@/hooks/useHoverAndMouseMoveZoomImage'
 // import Image from 'next/image'
-import Zoom from 'react-medium-image-zoom'
+// import Zoom from 'react-medium-image-zoom'
 
 const imagesProduct = [
   {
@@ -29,6 +30,7 @@ const settingsDotActive = {
 export const SlideProduct = () => {
   const [sliderRef, setSliderRef] = useState<any>(null)
   const [currentSlide, setCurrentSlide] = useState<any>(0)
+  const currentImageRef = useRef<any>([])
   // const [currentStateImage, setCurrentStateImage] = useState<any>(
   //   imagesProduct.map((image) => ({
   //     backgroundImage: `url(${image.img})`,
@@ -65,51 +67,53 @@ export const SlideProduct = () => {
     },
   }
 
-  const onZoom = (index: number) => {
-    console.log('hover')
-    return (e: any) => {
-      const x = e.clientX - e.target.offsetLeft
-      const y = e.clientY - e.target.offsetTop
+  // const onZoom = (index: number) => {
+  //   console.log('hover')
+  //   return (e: any) => {
+  //     const x = e.clientX - e.target.offsetLeft
+  //     const y = e.clientY - e.target.offsetTop
 
-      imageRef.current[index].style.transformOrigin = `${x}px ${y}px`
-      imageRef.current[index].style.transform = 'scale(1.5)'
-    }
-  }
+  //     imageRef.current[index].style.transformOrigin = `${x}px ${y}px`
+  //     imageRef.current[index].style.transform = 'scale(1.5)'
+  //   }
+  // }
 
-  const offZoom = (index: number) => {
-    console.log('out')
-    return (e: any) => {
-      imageRef.current[index].style.transformOrigin = `center center`
-      imageRef.current[index].style.transform = 'scale(1)'
-    }
-  }
+  // const offZoom = (index: number) => {
+  //   console.log('out')
+  //   return (e: any) => {
+  //     imageRef.current[index].style.transformOrigin = `center center`
+  //     imageRef.current[index].style.transform = 'scale(1)'
+  //   }
+  // }
 
-  useEffect(() => {
-    const currentContainerImageRef = containerImageRef.current
-    currentContainerImageRef.forEach((element: any, index: number) => {
-      element.addEventListener('mousemove', onZoom(index))
-      element.addEventListener('mouseover', onZoom(index))
-      element.addEventListener('mouseleave', offZoom(index))
-    })
+  // useEffect(() => {
+  //   const currentContainerImageRef = containerImageRef.current
+  //   currentContainerImageRef.forEach((element: any, index: number) => {
+  //     element.addEventListener('mousemove', onZoom(index))
+  //     element.addEventListener('mouseover', onZoom(index))
+  //     element.addEventListener('mouseleave', offZoom(index))
+  //   })
 
-    // return () => {
-    //   currentContainerImageRef.forEach((element: any, index: number) => {
-    //     element.removeEventListener('mousemove', onZoom(index))
-    //     element.removeEventListener('mouseover', onZoom(index))
-    //     element.removeEventListener('mouseleave', offZoom(index))
-    //   })
-    // }
-  }, [])
+  // return () => {
+  //   currentContainerImageRef.forEach((element: any, index: number) => {
+  //     element.removeEventListener('mousemove', onZoom(index))
+  //     element.removeEventListener('mouseover', onZoom(index))
+  //     element.removeEventListener('mouseleave', offZoom(index))
+  //   })
+  // }
+  // }, [])
 
   const handleMouseMove = (e: any) => {
-    console.log('Event', e.target.id)
-    // const { left, top, width, height } = e.target.getBoundingClientRect()
+    console.log('move', e.target.id)
+    e.target.style.transform = 'scale(2)'
+    const { left, top, width, height } = e.target.getBoundingClientRect()
     // console.log('left', left)
     // console.log('top', top)
     // console.log('width', width)
     // console.log('height', height)
-    // const x = ((e.pageX - left) / width) * 100
-    // const y = ((e.pageY - top) / height) * 100
+    const x = ((e.pageX - left) / width) * 100
+    const y = ((e.pageY - top) / height) * 100
+    e.target.style.transformOrigin = `${x}% ${y}%`
     // e.target.style.backgroundPosition = `${x}% ${y}%`
     // setCurrentStateImage((prev: any) =>
     //   prev.map((state: any, index: number) =>
@@ -120,14 +124,28 @@ export const SlideProduct = () => {
     // )
   }
 
+  const handleMouseOut = (e: any) => {
+    console.log('out', e.target.id)
+    // e.target.style.transform = ' scale(1)'
+    // e.target.style.transformOrigin = '0 0'
+  }
+
+  currentImageRef.current.forEach((ref, index: number) => {
+    useHoverAndMouseMoveZoomImage(ref, () => console.log(''))
+  })
+
   return (
     <div className={cls(styles.slick_slide_container)}>
       <Slider ref={setSliderRef} {...settings}>
         {imagesProduct.map((product, index) => (
-          <div key={index}>
+          <div key={index} className={cls(styles.slick_slide_image_container)}>
             <div
-              className={cls(styles.slide_image)}
+              id={`img-${index}`}
+              ref={(el) => (currentImageRef.current[index] = el)}
+              className={cls(styles.slick_slide_image)}
               style={{ backgroundImage: `url(${product.img})` }}
+              onMouseMove={handleMouseMove}
+              onMouseOut={handleMouseOut}
             ></div>
           </div>
           // <figure
