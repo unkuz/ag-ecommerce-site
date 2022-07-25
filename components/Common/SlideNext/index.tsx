@@ -8,14 +8,15 @@ export enum Btn_Type {
 }
 
 export const SlideBtnNextPrev = (props: any): JSX.Element => {
+  const stylePositionBtn =
+    props.type === Btn_Type.PREV
+      ? { left: `${props.position}px`, top: props.height ? `${props.height / 2}px` : '50%' }
+      : { right: `${props.position}px`, top: props.height ? `${props.height / 2}px` : '50%' }
+
   return (
     <div
       className={`${styles.slide} ${props.type === Btn_Type.PREV ? styles.prev : styles.next}`}
-      style={
-        props.type === Btn_Type.PREV
-          ? { left: `${props.position}px` }
-          : { right: `${props.position}px` }
-      }
+      style={stylePositionBtn}
       onClick={props.onClick}
     >
       {props.type === Btn_Type.PREV ? (

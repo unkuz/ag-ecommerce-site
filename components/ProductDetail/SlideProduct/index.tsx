@@ -20,7 +20,6 @@ const imagesProduct = [
 ]
 
 const settingsDotActive = {
-  // backgroundColor: '#ffba15',
   border: '1px solid #ffba15',
 }
 
@@ -37,18 +36,18 @@ export const SlideProduct = () => {
     swipeToSlide: true,
     draggable: true,
     fade: true,
-    dotsClass: 'slick-dots slick-thumb',
+    dotsClass: `slick-dots ${styles.custom_slick_dots}`,
     beforeChange: (prev: any, next: any) => {
       setCurrentSlide(next)
     },
     customPaging: function (i: any) {
       return (
         <div
-          // className={styles.custom_slick_dots}
+          className={styles.custom_slick_container_dot}
           style={i === currentSlide ? settingsDotActive : undefined}
         >
           <a>
-            <img src={`${imagesProduct[i].img}`} alt="" />
+            <img className={styles.custom_slick_image_dot} src={`${imagesProduct[i].img}`} alt="" />
           </a>
         </div>
       )
@@ -90,10 +89,10 @@ export const SlideProduct = () => {
         ))}
       </Slider>
       <div onClick={sliderRef?.slickNext}>
-        <SlideBtnNextPrev type={Btn_Type.NEXT} position={2} />
+        <SlideBtnNextPrev type={Btn_Type.NEXT} position={1} height={500} />
       </div>
       <div onClick={sliderRef?.slickPrev}>
-        <SlideBtnNextPrev type={Btn_Type.PREV} position={2} />
+        <SlideBtnNextPrev type={Btn_Type.PREV} position={1} height={500} />
       </div>
     </div>
   )
